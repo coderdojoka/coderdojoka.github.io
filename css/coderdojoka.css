@@ -470,14 +470,14 @@ body {
 #timeline .timeline-movement {
   border-bottom: dashed 1px #42dca3;
   position: relative;
-  height: 100px;
+  min-height: 100px;
 }
 #timeline .timeline-movement.timeline-movement-top {
   height: 60px;
 }
+
 #timeline .timeline-movement .timeline-item {
   padding: 20px 0;
-  min-height: 100px;
   top: 14px;
   font-size: 1.2em;
 }
@@ -530,4 +530,29 @@ body {
 .timeline-item a:focus {
     text-decoration: none;
     color: #ccc;
+}
+
+@media(max-width:767px) {
+	#timeline:before {
+		left: 35px;
+	}
+
+	#timeline .timeline-badge {
+		left: 50px;
+	}
+	
+	#timeline .timeline-movement .timeline-item {
+		padding: 20px 0 20px 100px;
+		text-align: left;
+	}
+	
+	#timeline .timeline-movement .timeline-item-first{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	#timeline .timeline-movement .timeline-item-last{
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
 }
