@@ -76,14 +76,14 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom .navbar-brand .navbar-toggle {
+.navbar-custom .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
 }
 
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
     outline: 0;
 }
 
@@ -137,6 +137,38 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #222;
     }
+	
+	.navbar-custom a {
+        color: #000;
+    }
+	
+	.navbar-custom.top-nav-collapse a {
+        color: #fff;
+    }
+	
+	.navbar-custom .nav li a:hover {
+        color: rgba(0,0,0,.8);
+    }
+	
+	.navbar-custom.top-nav-collapse .nav li a:hover {
+        color: rgba(255,255,255,.8);
+    }
+	
+	.navbar-custom.top-nav-collapse .nav li.active a {
+        background-color: rgba(0,0,0,.3);
+    }
+	
+	.navbar-custom.top-nav-collapse .nav li.active a {
+        background-color: rgba(255,255,255,.3);
+    }
+	
+	.navbar-custom.top-nav-collapse .nav li.active a:hover {
+        color: #000;
+    }
+	
+	.navbar-custom.top-nav-collapse .nav li.active a:hover {
+        color: #fff;
+    }
 }
 
 .intro {
@@ -145,9 +177,9 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: #000;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -196,10 +228,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #fff;
+    color: #000;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -209,8 +241,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
+    color: #000;
+    background: rgba(0,0,0,.1);
 }
 
 .btn-circle i.animated {
@@ -438,14 +470,14 @@ body {
 #timeline .timeline-movement {
   border-bottom: dashed 1px #42dca3;
   position: relative;
-  height: 100px;
+  min-height: 100px;
 }
 #timeline .timeline-movement.timeline-movement-top {
   height: 60px;
 }
+
 #timeline .timeline-movement .timeline-item {
   padding: 20px 0;
-  min-height: 100px;
   top: 14px;
   font-size: 1.2em;
 }
@@ -498,4 +530,29 @@ body {
 .timeline-item a:focus {
     text-decoration: none;
     color: #ccc;
+}
+
+@media(max-width:767px) {
+	#timeline:before {
+		left: 35px;
+	}
+
+	#timeline .timeline-badge {
+		left: 50px;
+	}
+	
+	#timeline .timeline-movement .timeline-item {
+		padding: 20px 0 20px 100px;
+		text-align: left;
+	}
+	
+	#timeline .timeline-movement .timeline-item-first{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	#timeline .timeline-movement .timeline-item-last{
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
 }
