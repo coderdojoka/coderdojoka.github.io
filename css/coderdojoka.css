@@ -386,7 +386,7 @@ body {
 }
 #timeline:before {
   top: 0;
-  bottom: 0;
+  bottom: 60px;
   position: absolute;
   content: " ";
   width: 2px;
@@ -458,6 +458,11 @@ body {
 }
 #timeline .timeline-movement.timeline-movement-top {
   height: 60px;
+}
+
+#timeline .timeline-row-future {
+  position: relative;
+  height: 80px;
 }
 
 #timeline .timeline-movement .timeline-item {
