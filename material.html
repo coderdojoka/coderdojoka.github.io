@@ -1,129 +1,378 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>CoderDojo Karlsruhe - Materialien</title>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Informationen zum CoderDojo Karlsruhe">
+    <meta name="author" content="CoderDojo Karlsruhe">
+    <meta name="keywords"
+          content="CoderDojo,Karlsruhe,Programmieren,Schüler,Schueler,Kinder,Jugendliche,Schule,KIT,Informatik,Scratch,HTML,CSS,JavaScript,Java,PHP,C#,C,C++,Python">
+
+    <title>CoderDojo Karlsruhe</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/coderdojoka.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-61795572-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
-<body>
 
-<h1>Python</h1>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<a href="http://python.org">Python</a> ist eine modere Programmiersprache, die gleichzeitig sehr vielseitig ist und eine einfache Syntax hat.
-Aus diesem Grund empfehlen wir Python, genauer Python 3, als Einsteigersprache in unserem CoderDojo.
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img src="img/logo.png" alt="CoderDojo Karlsruhe Logo"
+                     style="width: 30px; float: left; margin-right: 10px; margin-top: -5px"/> <span><span
+                    class="light">CoderDojo</span> Karlsruhe</span>
+            </a>
+        </div>
 
-<h3>Installation</h3>
-<a href="http://python.org">Python</a> kann direkt von der Webseite heruntergeladen und installiert werden.
-Eine Installationsanleitung für Windows von uns kann <a
-        href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Installation/installation_python.pdf">hier</a>
-gefunden werden.
-Bei der Installation ist es wichtig darauf zu achten, dass Python zum Windows-Systempfad hinzugefügt wird (dies wird
-auch in der Anleitung beschrieben), da dies die Dinge später erleichert.
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#scratch">Scratch</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#python">Python</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#html">HTML</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#java">Java</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
 
-<h3>Befehlsübersicht:</h3>
-Wir sind dabei eine  <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/referenz.pdf">Befehlsreferenz</a>
-zu erstellen, diese soll als Nachschlagwerk dienen, in der die wichtigsten Begriffe und Konstrukte aufgeführt sind.
+                    <h1 class="brand-heading">CoderDojo</h1>
 
-<h3>Tutorials:</h3>
+                    <h2 class="brand-heading">Karlsruhe</h2>
 
-<h4>Theorie:</h4>
-Um die Grundzüge von Python zu erklären sind hier ein paar Tutorials zu finden, die hoffentlich ein selbsterklärend
-sind.
-<ul>
-    <li>
-        <b>if-Abfragen:</b>
-        <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Tutorials/Theorie/if_bedingungen/if_text.pdf">if-Abfragen.pdf</a>
-    </li>
-    <li>
-        <b>while-Schleifen:</b>
-        <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Tutorials/Theorie/while/while.pdf">while.pdf</a>
-    </li>
-</ul>
+                    <p class="intro-text">Hier sind Materialien, wie Aufgaben, Tutorials und Beispielprogramme zu den im
+                        CoderDojo verwendeten Sprachen zu finden.</p>
+                    <p >
+                        <b style="color: darkred; font-size: 24pt">Diese Seite ist noch im Aufbau</b>
+                    </p>
+                    <a href="#about" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
 
-<h4>Spiele:</h4>
-Hier sind Anleitungen um kleine Beispielprogramme und Spiele, die schrittweise erklärt werden.
-<ul>
-    <li>
-        <b>Zahlenraten:</b>
-        <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Tutorials/Spiele/zahlenraten.pdf">Zahlenraten.pdf</a>
-    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-</ul>
+<section id="scratch" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <h2>Scratch</h2>
+
+                <p>
+                    <a href="https://scratch.mit.edu/projects/editor/?tip_bar=getStarted"> Scratch</a> ist eine einfache
+                    zu
+                    lernende Programmiersprache, mit der man sofort erste Erfolge erzielen kann.
+                    Man kann direkt im Browser anfangen zu programmieren, es muss nichts installiert werden.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
-<h3>Beispielprogramme:</h3>
-Die folgenden Beispielprogramme enthalten nützliche Konzepte und Beispiele, die dazu verwendet werden können, um
-nachzuschauen wie diese implementiert
-werden.
+<section id="python" class="content-section text-center">
+    <div class="container">
+        <div class="row">
 
-<ul>
+            <div class="col-lg-8 col-lg-offset-2">
 
-    <li>
-        <b>Eingaben lesen:</b> Ein einfaches Beispiel, das zeigt, wie Eingaben von der Konsole gelsen werden können:
-        <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/eingabe.py">eingabe.py</a>
-    </li>
-    <li>
-        <b>Datei lesen:</b> Ein Beispiel, das zeigt, wie Text aus einer Datei gelsen wird. Dafür muss es diese Datei
-        natürlich geben.
-        <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/datei_lesen.py">Datei
-            lesen.py</a>
-    </li>
-    <li>
-        <b>Pi berechnen:</b> Ein Programm um die Zahl Pi mithilfe von Zufallszahlen iterativ anzunähern:
-        <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/schleife_pi.py">Pi
-            berechnen.py</a>
-    </li>
-    <li>
-        <b>Zahlenraten:</b> Ein Spiel bei dem eine Zufallszahl in möglichst wenig versuchen erraten werden muss:
-        <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/zahlen_raten.py">Zahlenraten.py</a>
-    </li>
+                <h2>Python</h2>
 
-</ul>
+                <p>
+                    <a href="http://python.org">Python</a> ist eine modere Programmiersprache, die gleichzeitig sehr
+                    vielseitig ist und
+                    eine einfache Syntax hat.
+                    Aus diesem Grund empfehlen wir Python, genauer Python 3, als Einsteigersprache in unserem CoderDojo.
+                </p>
 
-<h3>Aufgaben</h3>
-Hier sind ein paar kleine Aufgaben zu finden. Diese erfordern Wissen ein oder mehrer Teilgebiet von Python.
-Diese bauen aufeinander auf und sind in mehreren Schwierigkeitsstufen verfügbar.
+                <h3>Installation</h3>
 
-<br>
-<br>
-<b>Einfach</b>
+                <p>
+                    <a href="http://python.org">Python</a> kann direkt von der Webseite heruntergeladen und installiert
+                    werden.
+                    Eine Installationsanleitung für Windows von uns kann <a
+                        href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Installation/installation_python.pdf">hier</a>
+                    gefunden werden.
+                    Bei der Installation ist es wichtig darauf zu achten, dass Python zum Windows-Systempfad hinzugefügt
+                    wird (dies wird
+                    auch in der Anleitung beschrieben), da dies die Dinge später erleichert.
+                </p>
 
-<ul>
-    <li>for-Schleife</li>
-    <ul>
+                <h3>Befehlsübersicht:</h3>
 
-        <li>
-            <b>Klopf-Klopf:</b>
-            <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/klopfklopf.pdf">Klopf
-                Klopf.pdf</a>
-        </li>
-        <li>
-            <b>Maler:</b>
-            <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/maler.pdf">Maler.pdf</a>
-        </li>
-        <li>
-            <b>Zauberstab:</b>
-            <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/zauberstab.pdf">Zauberstab.pdf</a>
-        </li>
+                <p>
+                    Wir sind dabei eine <a
+                        href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/referenz.pdf">Befehlsreferenz</a>
+                    zu erstellen, diese soll als Nachschlagwerk dienen, in der die wichtigsten Begriffe und Konstrukte
+                    aufgeführt sind.
+                </p>
 
-    </ul>
-    <br>
-    <li>Geschachtelte for-Schleifen</li>
-    <ul>
-        <li>
-            <b>Geldspeicher:</b>
-            Die Aufgabe ist hier zu finden:
-            <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/geldspeicher.pdf">geldspeicher.pdf</a>
-            <br>
-            Die Aufgabe erfordert zusätzlich ein Python-Skript:
-            <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/code/geldspeicher.py">geldspeicher.py</a>
-            <br>
-            Hier auch noch eine Python-Datei, in die die Lösung geschrieben werden kann. Sie muss im gleichen Ordner
-            liegen wie obige 'geldspeicher.py'-Datei:
-            <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/code/geldspeicher_test.py">geldspeicher_test.py</a>
-        </li>
-    </ul>
-</ul>
+                <h3>Tutorials:</h3>
 
+                <h4>Theorie:</h4>
+
+                <p>
+                    Um die Grundzüge von Python zu erklären sind hier ein paar Tutorials zu finden, die hoffentlich ein
+                    selbsterklärend
+                    sind.
+
+                <p>
+
+                <div>
+                    <b>if-Abfragen:</b>
+                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Tutorials/Theorie/if_bedingungen/if_text.pdf">if-Abfragen.pdf</a>
+                    <br>
+                    <b>while-Schleifen:</b>
+                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Tutorials/Theorie/while/while.pdf">while.pdf</a>
+                </div>
+
+                <p></p>
+
+                <h4>Spiele:</h4>
+
+                <p>
+                    Hier sind Anleitungen um kleine Beispielprogramme und Spiele, die schrittweise erklärt werden.
+                </p>
+
+                <div>
+
+                    <b>Zahlenraten:</b>
+                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Tutorials/Spiele/zahlenraten.pdf">Zahlenraten.pdf</a>
+                </div>
+
+                <p></p>
+
+                <h3>Beispielprogramme:</h3>
+
+                <p>
+                    Die folgenden Beispielprogramme enthalten nützliche Konzepte und Beispiele, die dazu verwendet
+                    werden
+                    können, um
+                    nachzuschauen wie diese implementiert
+                    werden.
+                </p>
+
+
+                <div>
+                    <b>Eingaben lesen:</b><br>
+                    Dieses Beispiel zeigt, wie Eingaben von der Konsole gelsen werden können:
+                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/eingabe.py">eingabe.py</a>
+                    <br>
+                    <br>
+                    <b>Datei lesen:</b><br>Zeigt, wie Text aus einer Datei gelsen wird.
+                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/datei_lesen.py">Datei
+                        lesen.py</a>
+                    <br>
+                    <br>
+                    <b>Pi berechnen:</b>
+                    <br>
+                    Ein Programm um die Zahl Pi mithilfe von Zufallszahlen iterativ anzunähern:
+                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/schleife_pi.py">Pi
+                        berechnen.py</a>
+                    <br>
+                    <br>
+
+                    <b>Zahlenraten:</b>
+                    <br>Ein Spiel bei dem eine Zufallszahl in möglichst wenig versuchen erraten
+                    werden muss:
+                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/zahlen_raten.py">Zahlenraten.py</a>
+
+                </div>
+                <p></p>
+
+                <h3>Aufgaben</h3>
+
+                <p>
+                    Hier sind ein paar kleine Aufgaben zu finden. Diese erfordern Wissen ein oder mehrer Teilgebiet von
+                    Python.
+                    Diese bauen aufeinander auf und sind in mehreren Schwierigkeitsstufen verfügbar.
+                </p>
+
+                <h5>for-Schleife</h5>
+                <ul class="ul_unstyled">
+                    <li>
+                        <ul class="ul_unstyled">
+
+                            <li>
+                                <b>Klopf-Klopf:</b>
+                                <br>
+                                <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/klopfklopf.pdf">Klopf
+                                    Klopf.pdf</a>
+                            </li>
+                            <li>
+                                <b>Maler:</b>
+                                <br>
+                                <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/maler.pdf">Maler.pdf</a>
+                            </li>
+                            <li>
+                                <b>Zauberstab:</b>
+                                <br>
+                                <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/zauberstab.pdf">Zauberstab.pdf</a>
+                            </li>
+
+                        </ul>
+                        <br>
+                    </li>
+                </ul>
+                <h6>Geschachtelte for-Schleifen</h6>
+                <ul class="ul_unstyled">
+                    <li>
+                        <ul style="list-style: none">
+                            <li>
+                                <b>Geldspeicher:</b>
+                                <br>
+                                Die Aufgabe ist hier zu finden:
+                                <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/geldspeicher.pdf">geldspeicher.pdf</a>
+                                <br>
+                                Die Aufgabe erfordert zusätzlich ein Python-Skript:
+                                <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/code/geldspeicher.py">geldspeicher.py</a>
+                                <br>
+                                Grundgerüst für die Lösung:
+                                <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Aufgaben/code/geldspeicher_test.py">geldspeicher_test.py</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="html" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <h2>HTML</h2>
+
+                <p>
+                    <a href="http://de.wikipedia.org/wiki/Hypertext_Markup_Language"> HTML</a> ist eine
+                    Programmiersprache
+                    mit der Webseite aufgebaut werden können. Diese können dann zusätzlich mithilfe von CSS und
+                    JavaScript angepasst und verschönert werden.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="java" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <h2>Java</h2>
+
+                <p>
+                    <a href="http://de.wikipedia.org/w/index.php?title=Java_(Programmiersprache)&oldid=142175688">Java</a> ist eine
+                    Objekt-orientierte Programmiersprache, die nicht so einfach zu erlernen ist wie Python und deshalb
+                    eher für fortgeschrittene Teilnehmer zu empfehlen ist.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; CoderDojo Karlsruhe 2015</p>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANKFqb2CrR93rUb6kfU6XnqepBGJoFk0M"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/coderdojoka.js"></script>
 
 </body>
+
 </html>
