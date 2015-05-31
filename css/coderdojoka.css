@@ -135,6 +135,21 @@ a:focus {
     color: #fff;
 }
 
+.navbar-custom span#navbar-brand-name{
+	margin-left: 10px;
+}
+
+.navbar-custom span#navbar-brand-name-collapse{
+    display: none;
+	margin-left: 10px;
+}
+
+.navbar-custom img.navbar-brand-logo {
+    width: 30px;
+    float: left;
+    margin-top: -5px
+}
+
 @media (min-width: 768px) {
     .navbar-custom {
         padding: 15px 0;
@@ -167,6 +182,10 @@ a:focus {
     .navbar-custom .nav li.active a:hover {
         color: #fff;
     }
+	
+	.navbar-custom span#navbar-brand-name-collapse {
+        display: inline;
+	}
 }
 
 .intro {
