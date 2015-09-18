@@ -19,6 +19,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Lightbox Image Viewer CSS -->
+    <link href="css/lightbox.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/coderdojoka.css" rel="stylesheet">
 
@@ -143,11 +146,18 @@
                     Jugendlichen Computer, Technik und besonders Programmieren näher zu bringen. Die Webseite dazu ist <a
                             href=https://coderdojo.com/>hier</a> zu finden.</p>
 
+
                 <h2>Warum CoderDojo?</h2>
 
+
                 <p>Programmieren zu können ist eine Fähigkeit, die heutzutage immer wichtiger wird. Wie mit den meisten
-                    Fähigkeiten ist es am besten Programmieren schon in frühen Jahren zu lernen. Leider ist Programmieren
-                    noch kein fester Bestandteil im Schulalltag der Kinder. Wir wollen deshalb ein CoderDojo in Karlsruhe
+                    Fähigkeiten ist es am besten Programmieren schon in frühen Jahren zu lernen.
+                    Leider ist Programmieren noch kein fester Bestandteil im Schulalltag der Kinder.
+                    <a href="img/codo/bild_1.jpg"  data-lightbox="codo-bilder" data-title="Mit zweiter Tastatur gehts besser!">
+                        <img class="img-thumbnail rechts_400" src="img/codo/bild_1.jpg" alt=""/>
+                    </a>
+
+                    Wir wollen deshalb ein CoderDojo in Karlsruhe
                     einrichten, um interessierten Kindern die Möglichkeit zu geben Programmieren zu lernen. In Deutschland
                     gibt es derzeit schon ein paar CoderDojos, das uns am nächsten gelegene ist in <a
                             href=https://coderdojohd.github.io>Heidelberg</a>.</p>
@@ -335,6 +345,12 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Wie mache ich mit?</h2>
 
+
+                <a href="img/codo/bild_2.jpg"  data-lightbox="codo-bilder" data-title="Spaß mit Scratch">
+                    <img class="img-thumbnail" src="img/codo/bild_2.jpg" alt=""/>
+                </a>
+
+
                 <p>Um uns die Planung der Treffen zu erleichtern, sollte sich jeder, der teilnehmen will, vorher bei uns per
                     <a href="mailto:coderdojo.karlsruhe@gmail.com">Mail</a> anmelden. Wenn ihr das erste Mal kommt, ist es
                     auch gut für uns vorher zu wissen, wie alt ihr seit und was für Vorkentnisse ihr mitbringt.</p>
@@ -353,6 +369,11 @@
 
                 <p>Wir sind noch auf der Suche nach weiteren Mentoren. Falls ihr Interesse habt als Mentor beim CoderDojo Karlsruhe mitzumachen,
                     schreibt uns einfach eine <a href="mailto:coderdojo.karlsruhe@gmail.com">Mail</a>.</p>
+
+                <a href="img/codo/bild_3.jpg"  data-lightbox="codo-bilder" data-title="Konzentriert am Arbeiten :)">
+                    <img class="img-thumbnail" src="img/codo/bild_3.jpg" alt=""/>
+                </a>
+
             </div>
         </div>
     </div>
@@ -429,6 +450,9 @@
 <!-- Plugin JavaScript -->
 <script src="js/jquery.easing.min.js"></script>
 
+<!-- Image Viewer Plugin -->
+<script src="js/lightbox.min.js"></script>
+
 <!-- Google Maps API -->
 <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANKFqb2CrR93rUb6kfU6XnqepBGJoFk0M"></script>
@@ -460,6 +484,15 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/coderdojoka.js"></script>
+
+<!-- Init Lightbox -->
+<script>
+    lightbox.option({
+        'resizeDuration': 400,
+        'wrapAround': true,
+        'fitImagesInViewport': true
+    })
+</script>
 
 </body>
 
