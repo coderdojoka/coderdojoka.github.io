@@ -3,9 +3,9 @@ Das Programm, dem der Roboter folgt, sie wie folgt aus:
 
 #### Das Programm wird durch folgende Schritte (auch Algorithmus genannt) beschrieben:
 
-> 1. Gehe in Richtung Ziel vorwärts bis du auf ein Hinderniss triffst. Kommst du ins Ziel ohne auf ein Hindernis zu treffen, dann bleibe stehen, du hast es geschafft!
-> 2. Laufe einmal komplett um das Hindernis herum und finde den Punkt, der dem Ziel am nächsten liegt. Der Roboter hast dafür Sensoren, du musst ggf nachmessen oder dich auf dein Augenmaß verlassen =) 
-> 3. Laufe erneut um das Hindernis bis du den Punkt mit dem geringesten Abstand zum Ziel angekommen bist, den du in der ersten Umrundung gefunden hast.
+> 1. Gehe in Richtung Ziel vorwärts bis du auf ein Hindernis triffst. Gehe dann zu Schritt 2. Kommst du ins Ziel ohne auf ein Hindernis zu treffen, dann bleibe stehen, du hast es geschafft!
+> 2. Laufe einmal komplett um das Hindernis herum und finde den Punkt, der dem Ziel am nächsten liegt. Der Roboter hast dafür Sensoren, du musst ggf nachmessen oder dich auf dein Augenmaß verlassen =). Weiter mit Schritt 3. 
+> 3. Laufe erneut um das Hindernis bis du den Punkt mit dem geringsten Abstand zum Ziel angekommen bist, den du in der ersten Umrundung gefunden hast.
 > 4. Wiederhole die obigen Schritte. D.h. gehe wieder zu Punkt 1.
 
 ![Hindernisse](https://raw.githubusercontent.com/coderdojoka/coderdojoka.github.io/master/raetsel/hindernisse.png)
