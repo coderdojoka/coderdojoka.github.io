@@ -226,7 +226,7 @@ a:focus {
     }
 
     .navbar-custom .navbar-nav > li, .navbar-custom .navbar-header {
-        padding: 15px 0;
+        padding: 10px 0;
         -webkit-transition: padding .5s ease-in-out;
         -moz-transition: padding .5s ease-in-out;
         transition: padding .5s ease-in-out;
@@ -691,3 +691,20 @@ body {
 #puzzle {
     margin-bottom: 200px;
 }
+
+#news{
+	font-size: 14pt;
+	color: white;
+	display: none;
+	margin: 2px 0;
+	
+}
+
+#news_content{
+	position: relative;
+}
+
+#news_content a{
+     color: #42dca3 !important;
+}
+

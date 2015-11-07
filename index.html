@@ -113,7 +113,11 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
+
+
+
     </div>
+		<div id="news"><span id="news_content"> bubberfisch</span> </div>
     <!-- /.container -->
 </nav>
 
@@ -462,14 +466,21 @@ Hier findet ihr aktuelle Informationen zu unseren Treffen.</p>
 <!-- Custom Theme JavaScript -->
 <script src="js/coderdojoka.js"></script>
 
+<!-- News ticker -->
+<script src="js/news_anim.js"></script>
+
 <!-- Init Lightbox -->
 <script>
     lightbox.option({
         'resizeDuration': 400,
         'wrapAround': true,
         'fitImagesInViewport': true
-    })
+    });
+
+	News.init(["Neu: das <a href='raetsel.html'>Rätsel der Woche</a>", "nächstes Treffen am 20.Nov"]);
+	News.animate();
 </script>
+
 
 </body>
 
