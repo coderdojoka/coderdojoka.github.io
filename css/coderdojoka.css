@@ -708,3 +708,35 @@ body {
      color: #42dca3 !important;
 }
 
+#news_container{
+	margin-bottom: 200px;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20pt;
+	text-align: left;
+}
+
+.triangle_box{
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+	font-size: 22pt;
+	margin: 5px 0;
+}
+.triangle_text{
+	background-color: black;	
+	color: white;
+	float: left	;	
+	padding-left: 5px;
+	width: 265px;
+}
+
+.triangle_right {
+	float: left;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 30px solid black;
+	border-bottom: 20px solid transparent;
+	margin-right: 10px;
+}
+
