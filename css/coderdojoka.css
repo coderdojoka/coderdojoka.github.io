@@ -697,18 +697,6 @@ body {
     margin-bottom: 200px;
 }
 
-#news{
-	font-size: 14pt;
-	color: white;
-	display: none;
-	margin: 2px 0;
-	
-}
-
-#news_content{
-	position: relative;
-}
-
 #news_container{
 	position: absolute;
 	left: 0;
@@ -719,7 +707,7 @@ body {
 }
 
 #news_container a{
-	color: #0D7900;
+	color: #00bf77;
 }
 
 .triangle_box{
