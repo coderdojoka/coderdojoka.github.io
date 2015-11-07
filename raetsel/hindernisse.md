@@ -11,10 +11,10 @@ Das Programm, dem der Roboter folgt, sie wie folgt aus:
 ![Hindernisse](https://raw.githubusercontent.com/coderdojoka/coderdojoka.github.io/master/raetsel/hindernisse.png)
 
 #### Aufgabe 1: Führe den oben beschriebenen Algorithmus durch und bringe den Roboter in Sicherheit
-Im obigen Bild ist der rote Punkte der Startpunkt des Roboters. Der grüne Punkte ist das Ziel, hierin muss der Roboter gelangen. Die blauen Formen sind Hidernisse und müssen umfahren werden.  
-Lade das Bild herunter und zeichne den Weg in das Bild ein. Du kannst es auch ausdrucken/abmalen und den Weg von Hand einzeichnen. Zeichne außerdem an wichtigen Stellen einen Richtungspfeil ein, um andzudeuten, in welche Richtung der Roboter läuft.
+Im obigen Bild ist der rote Punkt der Startpunkt des Roboters. Der grüne Punkt ist das Ziel, hierin muss der Roboter gelangen. Die blauen Formen sind Hindernisse und müssen umfahren werden.  
+Lade das Bild herunter und zeichne den Weg in das Bild ein. Du kannst es auch ausdrucken/abmalen und den Weg von Hand einzeichnen. Zeichne außerdem an wichtigen Stellen einen Richtungspfeil ein, um anzudeuten, in welche Richtung der Roboter läuft.
 
 
 #### Aufgabe 2: Finde einen kürzeren Weg
-Der oben beschriebene Algorithmus findet nicht den kürzesten Weg zum Ziel, warum nicht?  
-Findest du einen kürzeren Weg? Zeichne diesen ebenfalls ein. Du kannst z.B. mit einem Lineal die Weglänge ausmessen oder die Länge mithilfe des Koordinatensystems berechnen.
+- Der oben beschriebene Algorithmus findet nicht den kürzesten Weg zum Ziel, warum nicht?  
+- Findest du einen kürzeren Weg? Zeichne diesen ebenfalls ein. Du kannst z.B. mit einem Lineal die Weglänge ausmessen oder die Länge mithilfe des Koordinatensystems berechnen.
