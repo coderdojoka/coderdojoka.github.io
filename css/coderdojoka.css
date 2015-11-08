@@ -705,7 +705,7 @@ body {
 }
 
 #news_container {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 40px;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
