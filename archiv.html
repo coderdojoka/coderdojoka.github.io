@@ -65,16 +65,22 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="fa fa-bars"></i>
             </button>
-                <span>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logo.png" alt="CoderDojo Karlsruhe Logo" class="navbar-brand-logo"/>
-                        <span id="navbar-brand-name-collapse">
-                            <span class="light">CoderDojo</span> Karlsruhe
-                        </span>
-                    </a>
+            <span>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="CoderDojo Karlsruhe Logo" class="navbar-brand-logo"/>
+                    <span id="navbar-brand-name-collapse">
+                        <span class="light">CoderDojo</span> Karlsruhe
+                    </span>
+                </a>
+            </span>
+            <span class="navbar-breadcrumb navbar-breadcrumb-sep">
+                <i class="fa fa-angle-double-right"></i>
+            </span>
+            <a class="navbar-breadcrumb page-scroll" href="raetsel.html">Rätsel</a>
+                <span class="navbar-breadcrumb navbar-breadcrumb-sep">
+                    <i class="fa fa-angle-double-right"></i>
                 </span>
-                <span class="navbar-breadcrumb navbar-breadcrumb-sep"><i class="fa fa-angle-double-right"></i>
-                </span><a class="navbar-breadcrumb page-scroll" href="#page-top">Rätsel</a>
+            <a class="navbar-breadcrumb page-scroll" href="#page-top">Archiv</a>
         </div>
 
 
@@ -92,70 +98,31 @@
     <!-- /.container -->
 </nav>
 
+
 <!-- Puzzle Section -->
 <section class="content-section text-center">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 
-                <h1>Das Rätsel der Woche</h1>
-                <img src="img/ninjas.png">
+                <h1>Rätsel-Archiv</h1>
 
                 <p>
-                    Dir ist die Lücke zwischen 2 CoderDojo Treffen zu groß? Dann bist du hier richtig. Auf
-                    dieser Seite
-                    stellen wir nach jeden Treffen ein neues <a href="#puzzle"
-                                                                class="page-scroll">Rätsel</a> hoch, das
-                    du in Ruhe von
-                    daheim aus bearbeiten
-                    kannst,
-                    um die Zeit bis zum nächsten Treffen zu überbrücken.
+                    Hier findest du alle alten Rätsel, die bisher gestellt wurden. Das aktuelle Rätsel kannst du <a
+                        href="raetsel.html">hier</a> zu finden.
                 </p>
 
-                <h3>Wie funktionierts?</h3>
-
-                <p>
-                    Jeder CoderDojo-Teilnehmer kann die Aufgaben bearbeiten und uns die Lösungen per Mail
-                    schicken
-                    oder beim nächsten Dojo mitbringen. In regelmäßigen Abständen werden wir
-                    die besten Lösungen vorstellen und man kann sogar einen kleinen Preis gewinnen :)
-                </p>
-
-                <p>
-                    Es geht hier nicht darum die Aufgabe perfekt zu lösen, sondern du sollst dir selbst
-                    einen Lösungsweg überlegen. Du musst die Aufgabe nicht
-                    100% korrekt lösen, viel wichtiger ist, dass du versuchst sie zu lösen und dir Gedanken
-                    dazu gemacht
-                    hast.
-                    Als Lösung kannst du abgeben, was dir am Liebsten ist: Text, Bild, ein Scratch- oder
-                    Pythonprogramm,
-                    etc...
-                </p>
-
-                <p>
-                    Die Aufgaben sind so gestellet, dass alle Teilnehmer diese lösen können.
-                    Anderenfalls gibt es mehrere Teilaufgaben/Schwierigkeitsgrade, die ihr euch aussuchen
-                    könnt.
-                </p>
-
+                <h2>Alte Rätsel</h2>
+                <ul id="old_puzzles">
+                    <!-- <li data-md="zeichen_code.md" title="Text entschlüsseln"><a href="#old_puzzles">Text verschlüsseln</a> (20.11.2015)</li> -->
+                    <li data-md="hindernisse.md" title="Roboter im Labyrinth"><a
+                            href="#old_puzzles">Roboter-Labyrinth</a> (4.11.2015)
+                    </li>
+                </ul>
 
                 <hr class="space100">
 
-                <h2>Aktuelles Rätsel</h2>
-
-                <div id="puzzle">
-                    Lade Rätsel...
-                </div>
-
-
-                <h2>Alte Rätsel</h2>
-
-                <p>
-                    Alle bisherigen Rätsel kannst du im <a href="archiv.html">Archiv</a> finden. Du kannst
-                    diese, wenn
-                    du Lust hast, auch noch nachträglich lösen.
-                </p>
-
+                <div id="puzzle_view"></div>
 
             </div>
         </div>
@@ -194,18 +161,28 @@
 <script>
     window.onload = function () {
 
-        var $container = $('#puzzle');
+        var $container = $('#puzzle_view');
+        var url = "https://raw.githubusercontent.com/coderdojoka/coderdojoka.github.io/master/raetsel/";
 
-        // py2cd/master/README.md
-        $.get("https://raw.githubusercontent.com/coderdojoka/coderdojoka.github.io/master/raetsel/hindernisse.md").done(function (data) {
-
-            var converter = new showdown.Converter();
-            var html = converter.makeHtml(data);
-
-            $container.empty().append(html);
-        }).fail(function () {
-            $container.empty().append("Es ist ein Fehler beim Laden des Rätsels aufgetreten... :(");
+        $('#old_puzzles').find('li').each(function () {
+            var _this = $(this);
+            _this.click(function () {
+                loadPuzzle(_this.data("md"), _this.attr("title"))
+            });
         });
+
+        function loadPuzzle(name, title) {
+            $container.text("Lade Rätsel...");
+            $.get(url + name).done(function (data) {
+
+                var converter = new showdown.Converter();
+                var html = converter.makeHtml(data);
+
+                $container.empty().append("<h2>" + title + "</h2>").append(html);
+            }).fail(function () {
+                $container.empty().append("Es ist ein Fehler beim Laden des Rätsels aufgetreten... :(");
+            });
+        }
     }
 
 </script>

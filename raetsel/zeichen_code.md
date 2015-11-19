@@ -1,7 +1,12 @@
-Die drei Ninjas Karl, Bruno, Leyla haben das Handy ihres Sensei's versteckt. Damit sie nicht vergessen wo sie das Handy versteckt haben, haben sie aufgeschrieben, wo sie es versteckt haben. Um zu verhindern, dass ihr Sensei den Text lesen kann, haben sie diesen verschlüsselt.
+Die drei Ninjas Karl, Bruno, Leyla haben das Handy ihres Senseis versteckt.
+Damit sie nicht vergessen wo sie das Handy versteckt haben, haben sie aufgeschrieben,
+ wo sie es versteckt haben. Um zu verhindern, dass ihr Sensei den Text lesen kann, haben sie diesen verschlüsselt.
 
 ### Zeichen zuordnen
-Als ersten Schritt haben sich die Drei paar neue Symbole ausgedacht, um die Zahlen von 0-15 darzustellen. Dabei haben sie für die Zahlen 10-15 neue Symbole erfunden. Dummerweise haben die drei Ninjas vergessen welches Symbol zu welcher Zahl gehört... Allerdings haben sie sich genau für diesen Fall ein paar Hinweise aufgeschrieben:
+Als ersten Schritt haben sich die Drei paar neue Symbole ausgedacht,
+um die Zahlen von 0-15 darzustellen. Dabei haben sie für die Zahlen 10-15 neue Symbole erfunden.
+Dummerweise haben die drei Ninjas vergessen welches Symbol zu welcher Zahl gehört...
+Allerdings haben sie sich genau für diesen Fall ein paar Hinweise aufgeschrieben:
 
 `☂ - 2 = 9`  
 `⚑ + ☢ = 24`  
