@@ -1,6 +1,8 @@
-Die drei Ninjas Karl, Bruno, Leyla haben das Handy ihres Senseis versteckt.
-Damit sie nicht vergessen wo sie das Handy versteckt haben, haben sie aufgeschrieben,
- wo sie es versteckt haben. Um zu verhindern, dass ihr Sensei den Text lesen kann, haben sie diesen verschlüsselt.
+Die drei Ninjas Karl, Bruno, Leyla haben ein geheimes Süßigkeitenversteck.
+Damit ihr Sensei sie ihnen nicht weg isst, haben sie die Süßigkeiten gut versteckt.
+Damit sie selbst nicht vergessen wo sie die Süßigkeiten versteckt haben,
+haben sie aufgeschrieben,
+wo sie sie versteckt haben. Um zu verhindern, dass ihr Sensei den Text lesen kann, haben sie diesen verschlüsselt.
 
 ### Zeichen zuordnen
 Als ersten Schritt haben sich die Drei paar neue Symbole ausgedacht,
@@ -78,3 +80,18 @@ Hier noch einmal der Hinweistext:
   
 `4-❤4-94-☢4-☂5-32-❤ 5-54-☢5-44-55-2 4-44-54-★ 4-24-15-54-★5-35-44-14-★4-★2-☢`
 
+## Weitere Infos:
+Hast du dir schon einmal überlegt wie Texte, bzw. Buchstaben im PC gespeichert werden?
+Genau wie bei den drei Ninjas wird jedem Buchstaben eine Zahl zugewiesen. Da Computer sehr gut darin Zahlen zu speichern, 
+ist dies eine gute Methode um Buchstaben und damit Texte zu speichern.  
+
+Der Standard heutzutage ist die so genannte ASCII-Zeichencodierung. Diese ist im Prinzip eine große Tabelle,
+die jedem Zeichen(Buchstaben, Zahlen, Satzzeichen...) eine Zahl zuordnet. Allerdings sind unter ASCII nur 127 Zeichen enthalten.
+Deswegen hat man andere Zeichenkodierungen erfunden, die ASCII erweitern (z.B. UTF-8). So sind z.B. keine Umlaute
+wie ä,ö,ü in ASCII enthalten. Aus diesem Grund sollte man beim Programmieren auch keine Umlaute, sondern nur ASCII-Zeichen
+in Variablen-, bzw. Funktionsnamen verwenden.
+Mehr Infos zu ASCII gibt es [hier](http://www.blinde-kuh.de/internet/ascii.htm) 
+oder auch auf der [Wikipedia-Seite](https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) dazu.  
+
+Außerdem haben die 3 Ninja zufällig :) das hexadezimale Zahlensystem (16 verschiedene Zahlen) entdeckt. Wir rechnen normalerweise im Dezimalsystem (10 Zahlen). 
+Infos zum hexadezimalen System kann man z.B. [hier](http://ancient.stut.de/deutsch/hexadezimalsystem.html) oder auch auf der [Wikipedia-Seite](https://de.wikipedia.org/wiki/Hexadezimalsystem) finden.
