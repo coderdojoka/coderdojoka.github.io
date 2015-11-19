@@ -631,11 +631,18 @@ body {
     color: #ccc;
 }
 
+@media (max-width: 850px) {
+
+    #news_container {
+        bottom: 0px !important;
+    }
+}
+
 @media (max-width: 767px) {
-	
-	#news_container{
-		display: none;
-	}
+
+    #news_container {
+        display: none;
+    }
 
     #timeline:before {
         left: 35px;
@@ -689,7 +696,7 @@ body {
     .rechts_400 {
         float: right;
         margin-left: 8px;
-	margin-top: 8px;
+        margin-top: 8px;
     }
 }
 
@@ -697,42 +704,48 @@ body {
     margin-bottom: 200px;
 }
 
-#news_container{
-	position: absolute;
-	left: 0;
-	bottom: 40px;
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 18pt;
-	text-align: left;
+#news_container {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    text-align: left;
 }
 
-#news_container a{
-	color: #00bf77;
+#news_container a {
+    color: #008C58;
+    cursor: hand;
 }
 
-.triangle_box{
-	width: auto;
-	height: 40px;
-	line-height: 40px;
-	font-size: 18pt;
-	margin: 5px 0;
+#news_container a:hover {
+    color: #00bf77;
 }
-.triangle_text{
-	background-color: black;	
-	color: white;
-	float: left	;	
-	padding-left: 5px;
-	width: 220px;
+
+.triangle_box {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14pt;
+    margin: 5px 0;
+}
+
+.triangle_text {
+    background-color: black;
+    color: white;
+    float: left;
+    padding-left: 2px;
+    width: 170px;
 }
 
 .triangle_right {
-	float: left;
-	width: 0;
-	height: 0;
-	border-top: 20px solid transparent;
-	border-left: 30px solid black;
-	border-bottom: 20px solid transparent;
-	margin-right: 10px;
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 30px solid black;
+    border-bottom: 20px solid transparent;
+    margin-right: 10px;
 }
 
 #old_puzzles {
