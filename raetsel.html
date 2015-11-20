@@ -190,6 +190,7 @@
 <!-- Mardown to Html Plugin -->
 <script src="js/showdown.min.js"></script>
 
+
 <!-- Aktuelles Rätsel laden -->
 <script>
     window.onload = function () {
@@ -197,9 +198,9 @@
         var $container = $('#puzzle');
 
         // py2cd/master/README.md
-        $.get("https://raw.githubusercontent.com/coderdojoka/coderdojoka.github.io/master/raetsel/hindernisse.md").done(function (data) {
+        $.get("raetsel/zeichen_code.md").done(function (data) {
 
-            var converter = new showdown.Converter();
+            var converter = new showdown.Converter({tables: true});
             var html = converter.makeHtml(data);
 
             $container.empty().append(html);

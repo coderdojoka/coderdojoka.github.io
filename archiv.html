@@ -114,7 +114,7 @@
 
                 <h2>Alte Rätsel</h2>
                 <ul id="old_puzzles">
-                    <!-- <li data-md="zeichen_code.md" title="Text entschlüsseln"><a href="#old_puzzles">Text verschlüsseln</a> (20.11.2015)</li> -->
+                    <li data-md="zeichen_code.md" title="Text entschlüsseln"><a href="#old_puzzles">Text verschlüsseln</a> (20.11.2015)</li>
                     <li data-md="hindernisse.md" title="Roboter im Labyrinth"><a
                             href="#old_puzzles">Roboter-Labyrinth</a> (4.11.2015)
                     </li>
@@ -157,6 +157,7 @@
 <!-- Mardown to Html Plugin -->
 <script src="js/showdown.min.js"></script>
 
+
 <!-- Aktuelles Rätsel laden -->
 <script>
     window.onload = function () {
@@ -175,7 +176,7 @@
             $container.text("Lade Rätsel...");
             $.get(url + name).done(function (data) {
 
-                var converter = new showdown.Converter();
+                var converter = new showdown.Converter({extensions: ['github']});
                 var html = converter.makeHtml(data);
 
                 $container.empty().append("<h2>" + title + "</h2>").append(html);

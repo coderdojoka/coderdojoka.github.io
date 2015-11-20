@@ -17,14 +17,14 @@ Allerdings haben sie sich genau für diesen Fall ein paar Hinweise aufgeschriebe
 #### Aufgabe 1: Kannst du den Ninjas helfen und die Symbole zuordnen?
 Denke daran, dass die Ninja-Symbole für die Zahlen von 10-15 stehen
 
-  Ninja-Symbol	 | Zahl
-  -------------  | -------------
-  ☂				 | ?
-  ⚑			     | ?
-  ☢				 | ?
-  ♫				 | ?
-  ★			     | ?
-  ❤				 | ?
+ | Ninja-Symbol |  Zahl    |
+ | :============: | :========: |
+ | ☂            | ?        |
+ | ⚑            | ?        |
+ | ☢            | ?        |
+ | ♫            | ?        |
+ | ★            | ?        |
+ | ❤            | ?        |
 
 
 ### Text entschlüsseln
