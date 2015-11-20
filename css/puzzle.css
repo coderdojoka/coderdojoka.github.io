@@ -13,3 +13,26 @@ img {
 hr {
     margin: 100px 0;
 }
+
+table {
+    margin: 0 auto;
+    background: #fff;
+    border: solid 1px #ddd;
+    table-layout: auto;
+    margin-bottom: 5em;
+}
+
+table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+    display: table-cell;
+    line-height: 1.5rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+
+table tr th, table tr td {
+    color: #222;
+    text-align: left;
+    padding: .5em 1.5em;
+}

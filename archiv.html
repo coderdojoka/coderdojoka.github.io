@@ -165,7 +165,7 @@
     window.onload = function () {
 
         var $container = $('#puzzle_view');
-        var url = "https://raw.githubusercontent.com/coderdojoka/coderdojoka.github.io/master/raetsel/";
+        var url = "raetsel/";
 
         $('#old_puzzles').find('li').each(function () {
             var _this = $(this);
@@ -178,7 +178,7 @@
             $container.text("Lade Rätsel...");
             $.get(url + name).done(function (data) {
 
-                var converter = new showdown.Converter({extensions: ['github']});
+                var converter = new showdown.Converter({tables:true});
                 var html = converter.makeHtml(data);
 
                 $container.empty().append("<h2>" + title + "</h2>").append(html);

@@ -43,36 +43,36 @@ Z.B. Steht in der Tabelle noch:
 Dies bedeutet, dass das Zeichen für 14 noch eingesetzt werden muss, so dass z.B. `4-14 = 4-❤ -> n`  
 Die korrekten Symbole müssen zuerst in Aufgabe 1 ermittelt werden!
 
-  Ninja-Symbol	 | Buchstabe
-  -------------  | -------------
-  4-1			 | a
-  4-2		     | b
-  4-3			 | c
-  4-4			 | d
-  4-5		     | e
-  4-6			 | f
-  4-7			 | g
-  4-8			 | h
-  4-9			 | i
-  4-10 = 4-?	 | j
-  4-11 = 4-?	 | k
-  4-12 = 4-?	 | l
-  4-13 = 4-?	 | m
-  4-14 = 4-?	 | n
-  4-15 = 4-?	 | o
-  5-0			 | p
-  5-1			 | q
-  5-2			 | r
-  5-3			 | s
-  5-4			 | t
-  5-5			 | u
-  5-6			 | v
-  5-7			 | w
-  5-8			 | x
-  5-9			 | y
-  5-10 = 4-?	 | z
-  2-12 = 4-?	 | ,
-  2-14 = 4-?	 | .
+|  Ninja-Symbol	 | Buchstabe     |
+|  :-----------: | :-----------: |
+|  4-1			 | a             |
+|  4-2		     | b             |
+|  4-3			 | c             |
+|  4-4			 | d             |
+|  4-5		     | e             |
+|  4-6			 | f             |
+|  4-7			 | g             |
+|  4-8			 | h             |
+|  4-9			 | i             |
+|  4-10 = 4-?	 | j             |
+|  4-11 = 4-?	 | k             |
+|  4-12 = 4-?	 | l             |
+|  4-13 = 4-?	 | m             |
+|  4-14 = 4-?	 | n             |
+|  4-15 = 4-?	 | o             |
+|  5-0			 | p             |
+|  5-1			 | q             |
+|  5-2			 | r             |
+|  5-3			 | s             |
+|  5-4			 | t             |
+|  5-5			 | u             |
+|  5-6			 | v             |
+|  5-7			 | w             |
+|  5-8			 | x             |
+|  5-9			 | y             |
+|  5-10 = 4-?	 | z             |
+|  2-12 = 4-?	 | ,             |
+|  2-14 = 4-?	 | .             |
 
 
 #### Aufgabe 2: Kannst du den Hinweis der Ninjas mithilfe der Tabelle übersetzen?
