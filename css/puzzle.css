@@ -1,0 +1,15 @@
+/*
+Damit die Bilder, auch automatisch generierte  'responsive' sind.
+*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#old_puzzles {
+    text-align: left;
+}
+
+hr {
+    margin: 100px 0;
+}
