@@ -19,14 +19,14 @@ Allerdings haben sie sich genau für diesen Fall ein paar Hinweise aufgeschriebe
 #### Aufgabe 1: Kannst du den Ninjas helfen und die Symbole zuordnen?
 Denke daran, dass die Ninja-Symbole für die Zahlen von 10-15 stehen
 
- | Ninja-Symbol |  Zahl    |
- | :============: | :========: |
- | ☂            | ?        |
- | ⚑            | ?        |
- | ☢            | ?        |
- | ♫            | ?        |
- | ★            | ?        |
- | ❤            | ?        |
+| Ninja-Symbol |  Zahl |
+| :----------: | :---: |
+| ☂            | ?     |
+| ⚑            | ?     |
+| ☢            | ?     |
+| ♫            | ?     |
+| ★            | ?     |
+| ❤            | ?     |
 
 
 ### Text entschlüsseln
@@ -81,12 +81,13 @@ Hier noch einmal der Hinweistext:
 `4-❤4-94-☢4-☂5-32-❤ 5-54-☢5-44-55-2 4-44-54-★ 4-24-15-54-★5-35-44-14-★4-★2-☢`
 
 ## Weitere Infos:
+
 Hast du dir schon einmal überlegt wie Texte, bzw. Buchstaben im PC gespeichert werden?
-Genau wie bei den drei Ninjas wird jedem Buchstaben eine Zahl zugewiesen. Da Computer sehr gut darin Zahlen zu speichern, 
+Genau wie bei den drei Ninjas wird jedem Buchstaben eine Zahl zugewiesen. Da Computer sehr gut darin sind Zahlen zu speichern, 
 ist dies eine gute Methode um Buchstaben und damit Texte zu speichern.  
 
 Der Standard heutzutage ist die so genannte ASCII-Zeichencodierung. Diese ist im Prinzip eine große Tabelle,
-die jedem Zeichen(Buchstaben, Zahlen, Satzzeichen...) eine Zahl zuordnet. Allerdings sind unter ASCII nur 127 Zeichen enthalten.
+die jedem Zeichen (Buchstaben, Zahlen, Satzzeichen...) eine Zahl zuordnet. Allerdings sind unter ASCII nur 127 Zeichen enthalten.
 Deswegen hat man andere Zeichenkodierungen erfunden, die ASCII erweitern (z.B. UTF-8). So sind z.B. keine Umlaute
 wie ä,ö,ü in ASCII enthalten. Aus diesem Grund sollte man beim Programmieren auch keine Umlaute, sondern nur ASCII-Zeichen
 in Variablen-, bzw. Funktionsnamen verwenden.
