@@ -21,6 +21,8 @@
 
     <!-- Custom CSS -->
     <link href="css/coderdojoka.css" rel="stylesheet">
+    <link href="css/material.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -96,17 +98,15 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#scratch">Scratch</a>
+                    <a class="jump" href="#scratch">Scratch</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#python">Python</a>
+                    <a class="jump" href="#python">Python</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#html">HTML</a>
+                    <a class="jump" href="#html">HTML</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#java">Java</a>
-                </li>
+                <!-- <li><a class="jump" href="#java">Java</a></li> -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -130,7 +130,7 @@
                     <p>
                         <b style="color: darkred; font-size: 24pt">Diese Seite ist noch im Aufbau</b>
                     </p>
-                    <a href="#scratch" class="btn btn-circle page-scroll">
+                    <a href="#general" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
 
@@ -163,24 +163,72 @@
 </section>
 
 
-<section id="scratch" class="content-section text-center">
+<section id="chooser" class="content-section text-center">
     <div class="container">
         <div class="row">
 
             <div class="col-lg-8 col-lg-offset-2">
 
+                <h2>Wähle deine Sprache</h2>
+                <table id="lang_chooser">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div id="lang_scratch" class="lang_con">
+                                <div>
+                                    <img src="img/scratch.svg">
+                                    <a>Scratch</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="lang_python" class="lang_con">
+                                <div>
+                                    <img src="img/python.svg">
+
+                                    <a>Python</a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div id="lang_html" class="lang_con">
+                                <div>
+                                    <img src="img/html5.svg">
+                                    <a>HTML</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="scratch" class="language_section text-center hidden">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
 
                 <h2>Scratch</h2>
 
                 <p>
-                    <a href="https://scratch.mit.edu/projects/editor/?tip_bar=getStarted"> Scratch</a> ist eine einfache
-                    zu lernende Programmiersprache, mit der man sofort erste Erfolge erzielen kann. Man kann direkt im
+                    <a href="https://scratch.mit.edu/projects/editor/?tip_bar=getStarted"> Scratch</a> ist eine
+                    einfache
+                    zu lernende Programmiersprache, mit der man sofort erste Erfolge erzielen kann. Man kann
+                    direkt im
                     Browser anfangen zu programmieren,
                     es muss nichts installiert werden.
                 </p>
 
 
-                <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/63674944/?autostart=false" frameborder="0" allowfullscreen="true"></iframe>
+                <iframe allowtransparency="true" width="485" height="402"
+                        src="//scratch.mit.edu/projects/embed/63674944/?autostart=false" frameborder="0"
+                        allowfullscreen="true"></iframe>
 
                 <h3>Nützliche links</h3>
 
@@ -221,7 +269,8 @@
                     </li>
                     <li>
                         Eine Sammlung von Video-Tutorials im Aufbau:
-                        <a href="https://www.youtube.com/channel/UCNc2uw7INArwMLD1AJ4oGnQ">"Der Scratch-Kanal" auf
+                        <a href="https://www.youtube.com/channel/UCNc2uw7INArwMLD1AJ4oGnQ">"Der Scratch-Kanal"
+                            auf
                             YouTube</a>
                     </li>
                     <li>
@@ -236,7 +285,7 @@
 </section>
 
 
-<section id="python" class="content-section text-center">
+<section id="python" class="language_section text-center hidden">
     <div class="container">
         <div class="row">
 
@@ -541,14 +590,8 @@
     </div>
 </section>
 
-<p></p>
 
-<p></p>
-
-<p></p>
-
-
-<section id="html" class="content-section text-center">
+<section id="html" class="language_section text-center hidden">
     <div class="container">
         <div class="row">
 
@@ -587,14 +630,8 @@
     </div>
 </section>
 
-<p></p>
-
-<p></p>
-
-<p></p>
-
-
-<section id="java" class="content-section text-center">
+<!--
+<section id="java" class="language_section text-center hidden">
     <div class="container">
         <div class="row">
 
@@ -612,7 +649,7 @@
         </div>
     </div>
 </section>
-
+-->
 
 <!-- Footer -->
 <footer>
@@ -639,6 +676,38 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/coderdojoka.js"></script>
+
+<script type="text/javascript">
+    var language = null;
+
+    function highlight(lang) {
+        // unselect previous
+        if (language != null) {
+            $("#lang_" + language).removeClass("active_lang");
+            $('#' + language).addClass("hidden")
+        }
+        language = lang;
+
+        $('#lang_' + lang).addClass("active_lang");
+        scroll_to($('#' + lang).removeClass("hidden"));
+
+    }
+    $(document).ready(function () {
+
+        $(".lang_con").click(function () {
+            var lang = $(this).attr("id").substr(5);
+            highlight(lang);
+        });
+
+        $("nav a.jump").click(function (event) {
+            var lang = $(this).attr("href").substr(1);
+            highlight(lang);
+            event.preventDefault();
+        });
+
+    });
+</script>
+
 
 </body>
 

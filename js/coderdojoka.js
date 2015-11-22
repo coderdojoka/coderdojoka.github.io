@@ -17,12 +17,17 @@ $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+function scroll_to(target) {
+    $('html, body').stop().animate({
+        scrollTop: $(target).offset().top
+    }, 1500, 'easeInOutExpo');
+}
+
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        var target = $anchor.attr('href');
+        scroll_to(target);
         event.preventDefault();
     });
 });
