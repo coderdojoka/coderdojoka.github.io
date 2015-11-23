@@ -16,6 +16,28 @@ function collapseNavbar() {
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
+var MarkdownLoader = {
+
+    converter: new showdown.Converter({tables: true}),
+
+    load_md: function (selector, url) {
+
+        var $container = $(selector);
+        $container.empty().append("Lade Inhalt. Bitte warten...");
+
+        $.get(url).done(function (data) {
+            var html = MarkdownLoader.converter.makeHtml(data);
+            $container.empty().append(html);
+            $container.find("table").addClass("markdown");
+
+        }).fail(function (a, b) {
+            $container.empty().append("Der Inhalt konnte nicht geladen werden :(");
+            console.log(a, b)
+        });
+    }
+};
+
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 function scroll_to(target) {
     $('html, body').stop().animate({
@@ -23,8 +45,8 @@ function scroll_to(target) {
     }, 1500, 'easeInOutExpo');
 }
 
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
+$(function () {
+    $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         var target = $anchor.attr('href');
         scroll_to(target);
@@ -33,18 +55,18 @@ $(function() {
 });
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
+$('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
- 
-$('.navbar-nav > li.dropdown.hidden-xs').hover(function() {
-    $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
-    $(this).addClass('open');
-  },
-  function() {
-    $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
-    $(this).removeClass('open');
-});
+
+$('.navbar-nav > li.dropdown.hidden-xs').hover(function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
+        $(this).addClass('open');
+    },
+    function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
+        $(this).removeClass('open');
+    });
 
 
 // Google Maps Scripts

@@ -55,18 +55,6 @@
         ga('send', 'pageview');
     </script>
 
-    <script>
-        window.onload = function () {
-
-            $.get("https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/py2cd/README.md").done(function (data) {
-
-                var converter = new showdown.Converter(),
-                        html = converter.makeHtml(data);
-                $('#py2cd').append(html);
-            });
-        }
-
-    </script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -98,15 +86,15 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="jump" href="#scratch">Scratch</a>
+                    <a class="scroll_to" href="#scratch">Scratch</a>
                 </li>
                 <li>
-                    <a class="jump" href="#python">Python</a>
+                    <a class="scroll_to" href="#python">Python</a>
                 </li>
                 <li>
-                    <a class="jump" href="#html">HTML</a>
+                    <a class="scroll_to" href="#html">HTML</a>
                 </li>
-                <!-- <li><a class="jump" href="#java">Java</a></li> -->
+                <!-- <li><a class="scroll_to" href="#java">Java</a></li> -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -339,254 +327,48 @@
                     Begriffe und Konstrukte aufgeführt sind.
                 </p>
 
-
-                <div id="py2cd" class="text-left">
-
-                </div>
-
-                <div>
-                    <h2>Python Stufen</h2>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#yellow">Grundlagen</a></li>
-                        <li><a data-toggle="tab" href="#red">Fortgeschrittene Grundlagen</a></li>
-                        <li><a data-toggle="tab" href="#purple">Klassen und OOP</a></li>
-                        <li><a data-toggle="tab" href="#black">Eigenes Projekt</a></li>
-                    </ul>
-
-                    <div class="tab-content belt_container">
-                        <div id="yellow" class="tab-pane fade in active">
-
-                            <h3>Grundlagen</h3>
-
-                            <p>In dieser Stufe sollen die folgenden fünf Grundlagen gemeistert werden:</p>
-                            <ul>
-                                <li>Umgang mit <a
-                                        href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Tutorials/Variablen/Variablen.pdf">Variablen</a>
-                                    <ul>
-                                        <li>Variablen verwenden, lesen und setzen</li>
-                                        <li>Operationen mit Zahlen</li>
-                                        <li>Ausgabe von Variablen mit print()</li>
-                                    </ul>
-                                </li>
-                                <li>Umgang mit <a
-                                        href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Tutorials/Text/Text.pdf">Text</a>
-                                    <ul>
-                                        <li>Text verknüpfen</li>
-                                        <li>Text ausgaben</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Tutorials/Eingabe/Eingabe.pdf">Einlesen</a>
-                                    von Inhalten
-                                    <ul>
-                                        <li>Text einlesen</li>
-                                        <li>Zahlen einlesen</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Tutorials/if_Abfragen/if_text.pdf">if-Abfrage</a>
-                                    <ul>
-                                        <li>Was sind Bedingungen</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Tutorials/while/while.pdf">while-Schleife</a>
-
-                                </li>
-                            </ul>
-                            <p>Zu jedem Thema soll mindestens eine Aufgabe gelöst werden. Um den gelben Gürtel zu
-                                erhalten, muss eine Abschlussaufgabe gelöst werden.</p>
-
-                            <h3>Aufgaben</h3>
-                            <ul>
-                                <li>Variablen
-                                    <ul>
-                                        <li>
-                                            <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Aufgaben/zauberstab.pdf">Zauberstab</a>
-                                        </li>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                                <li>Text
-                                    <ul>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                                <li>while-Schleife
-                                    <ul>
-                                        <li>
-                                            <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Aufgaben/klopfklopf.pdf">Klopf
-                                                Klopf</a></li>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                                <li>if-Abfrage
-                                    <ul>
-                                        <li>
-                                            <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Aufgaben/Fussball.pdf">Fußballspiel</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Aufgaben/SchereSteinPapier.pdf">Schere,
-                                                Stein, Papier</a></li>
-                                    </ul>
-                                </li>
-                                <li>Eingabe
-                                    <ul>
-                                        <li>
-                                            <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Aufgaben/321.pdf">321</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <h3>Abschlussaufgabe</h3>
-
-                            <p>Als Abschluss soll, möglichst eigenständig, das Spiel <a
-                                    href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Gelber Gürtel/Zahlenraten/zahlenraten.pdf">Zahlenraten</a>
-                                programmiert werden.</p>
-
-
-                        </div>
-                        <div id="red" class="tab-pane fade">
-
-                            <h3>Fortschritte</h3>
-
-                            <p>In dieser Stufe sollen die folgendende 5 Grundlagen gemeistert werden:</p>
-                            <ul>
-                                <li>Listen und for-Schleifen
-                                    <ul>
-                                        <li>Listen füllen, modifizieren, löschen</li>
-                                        <li>Listen mit for ausgeben</li>
-                                    </ul>
-                                </li>
-                                <li>geschachtelte Schleifen
-                                    <ul>
-                                        <li>for-schleifen schachteln</li>
-                                        <li>for und while schachteln</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Roter Gürtel/Tutorials/tkinter/tk.pdf">Einführung
-                                        in Tkinter</a> als GUI-Framework
-                                    <ul>
-                                        <li>Fenster mit Text</li>
-                                        <li>Fenster mit Button + Klick-Event</li>
-                                    </ul>
-                                </li>
-                                <li>Funktionen I
-                                    <ul>
-                                        <li>einfache Funktion ohne Parameter</li>
-                                        <li>Funktionen aufrufen</li>
-                                        <li>einfacher Rückgabewert</li>
-                                    </ul>
-                                </li>
-                                <li>Funktion II
-                                    <ul>
-                                        <li>komplexere Funktionen mit Übergabeparameter</li>
-                                        <li>Überlegung: Erkennen von Systemfunktionen, z.B. print(), etc...</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <p>Zu jedem Thema soll mindestens eine Aufgabe gelöst werden. Um den roten Gürtel zu
-                                erhalten muss eine Abschlussaufgabe gelöst werden.</p>
-
-                            <h3>Aufgaben</h3>
-                            <ul>
-                                <li> Listen
-                                    <ul>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                                <li>geschachtelte Schleifen
-                                    <ul>
-                                        <li>
-                                            <a href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Roter Gürtel/Aufgaben/maler.pdf">Maler</a>
-                                        </li>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                                <li>Tkinter
-                                    <ul>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                                <li>Funktionen I
-                                    <ul>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                                <li>Funktionen II
-                                    <ul>
-                                        <li>...</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <h3>Abschlussaufgabe</h3>
-
-                            <p>Als Abschluss soll der <a
-                                    href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Roter Gürtel/Geldspeicher/geldspeicher.pdf">Geldspeicher</a>
-                                geknackt werden.
-                            </p>
-
-
-                        </div>
-                        <div id="purple" class="tab-pane fade">
-                            Insert content...
-                        </div>
-                        <div id="black" class="tab-pane fade">
-                            Insert content...
-                        </div>
-                    </div>
-                </div>
-
-                <p></p>
-
-
-                <h3>Beispielprogramme:</h3>
-
-                <p>
-                    Die folgenden Beispielprogramme sind kleine Beispiele, die nützliche Ideen und Konzepte enthalten.
-                    Hier kann man nachzuschauen wie diese implementiert werden.
-                </p>
-
-
-                <div>
-                    <b>Eingaben lesen:</b>
-                    <br> Dieses Beispiel zeigt, wie Eingaben von der Konsole gelsen werden können:
-                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/eingabe.py">eingabe.py</a>
-                    <br>
-                    <br>
-                    <b>Datei lesen:</b>
-                    <br>Zeigt, wie Text aus einer Datei gelsen wird.
-                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/datei_lesen.py">Datei
-                        lesen.py</a>
-                    <br>
-                    <br>
-                    <b>Pi berechnen:</b>
-                    <br> Ein Programm um die Zahl Pi mithilfe von Zufallszahlen iterativ anzunähern:
-                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/schleife_pi.py">Pi
-                        berechnen.py</a>
-                    <br>
-                    <br>
-
-                    <b>Zahlenraten:</b>
-                    <br>Ein Spiel bei dem eine Zufallszahl in möglichst wenig versuchen erraten werden muss:
-                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Py
-                        thon/Beispiele/zahlen_raten.py">Zahlenraten.py</a>
-
-                    <br>
-                    <br>
-
-                    <b>3 Gewinnt mit grafischer Oberfläche:</b>
-                    <br>Ein 3-Gewinnt Spiel mit Tkinter als grafische Oberfläche
-                    <a href="https://github.com/coderdojoka/Materialien/raw/master/Python/Beispiele/tkinter_beispiele/fenster_3gewinnt.py">3Gewinnt.py</a>
-
-
-                </div>
-                <p></p>
-
-
             </div>
+
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Python Tutorials und Aufgaben</h2>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#basics">Grundlagen</a></li>
+                    <li><a data-toggle="tab" href="#progress">Fortschritte</a></li>
+                    <li><a data-toggle="tab" href="#py2cd">Spiele/Zeichnen</a></li>
+
+                    <!--
+                    <li><a data-toggle="tab" href="#purple">Klassen und OOP</a></li>
+                    <li><a data-toggle="tab" href="#black">Eigenes Projekt</a></li>
+                    -->
+                </ul>
+
+                <div class="tab-content belt_container">
+                    <div id="basics" class="tab-pane fade in active"></div>
+                    <div id="progress" class="tab-pane fade"></div>
+                    <div id="py2cd" class="tab-pane fade"></div>
+                    <!--
+                    <div id="purple" class="tab-pane fade">
+                        Insert content...
+                    </div>
+                    <div id="black" class="tab-pane fade">
+                        Insert content...
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <p></p>
+
+
+            <h3>Beispielprogramme:</h3>
+
+            <div id="python_examples"></div>
+
+            <p></p>
+
+
         </div>
+    </div>
     </div>
 </section>
 
@@ -692,18 +474,25 @@
         scroll_to($('#' + lang).removeClass("hidden"));
 
     }
+
     $(document).ready(function () {
+
 
         $(".lang_con").click(function () {
             var lang = $(this).attr("id").substr(5);
             highlight(lang);
         });
 
-        $("nav a.jump").click(function (event) {
+        $("nav a.scroll_to").click(function (event) {
             var lang = $(this).attr("href").substr(1);
             highlight(lang);
             event.preventDefault();
         });
+
+        MarkdownLoader.load_md('#python_examples', "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Beispiele/README.md");
+        MarkdownLoader.load_md('#py2cd', "https://raw.githubusercontent.com/coderdojoka/py2cd/master/README.md");
+        MarkdownLoader.load_md('#basics', "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Grundlagen/README.md");
+        MarkdownLoader.load_md('#progress', "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Fortschritte/README.md");
 
     });
 </script>

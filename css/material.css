@@ -1,10 +1,51 @@
+/*
+Damit die Bilder, auch automatisch generierte  'responsive' sind.
+*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    margin: 100px 0;
+}
+
+table.markdown {
+    margin: 0 auto;
+    border: solid 1px #ddd;
+    table-layout: auto;
+    margin-bottom: 5em;
+}
+
+table.markdown thead tr th,
+table.markdown tfoot tr th,
+table.markdown tfoot tr td,
+table.markdown tbody tr th,
+table.markdown tbody tr td,
+table.markdown tr td {
+    display: table-cell;
+    line-height: 1.5rem;
+}
+
+table.markdown tbody tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+
+table.markdown tr th,
+table.markdown tr td {
+    color: #222;
+    text-align: left;
+    padding: .5em 5px;
+    line-height: 1.5;
+}
+
 #lang_chooser {
     margin: 0 auto 100px;
 }
 
-.lang_con{
+.lang_con {
     cursor: pointer;
-    font-size: 20pt;
+    font-size: 18pt !important;
     padding: 1px;
     margin: 5px;
     height: 200px;
@@ -14,12 +55,12 @@
     box-shadow: 2px 2px 5px silver;
 }
 
-.lang_con:hover{
+.lang_con:hover {
     background-color: #ffb400;
     border: 2px solid gray;
 }
 
-.active_lang{
+.active_lang {
     border: 2px solid gray;
     background-color: rgba(255, 180, 0, 0.33);
 }
@@ -35,23 +76,23 @@
     height: 150px;
 }
 
-.language_section{
+.language_section {
     padding-top: 75px;
 }
 
 @media (max-width: 767px) {
 
-    .lang_con{
+    .lang_con {
         width: 100px;
         height: 100px;
     }
 
-    .lang_con > div{
+    .lang_con > div {
         height: 90px;
         margin: 1px auto;
     }
 
-    .lang_con > div img{
+    .lang_con > div img {
         height: 90px;
     }
 

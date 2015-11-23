@@ -41,11 +41,17 @@ li {
     }
 }
 
+td, th {
+    font-size: 18px;
+}
+
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
 }
+
 
 @media (min-width: 768px) {
     p {
