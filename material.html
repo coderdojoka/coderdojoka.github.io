@@ -101,32 +101,6 @@
     </div>
     <!-- /.container -->
 </nav>
-<!-- Intro Header -->
-<header class="intro">
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-
-                    <h1 class="brand-heading">CoderDojo</h1>
-
-                    <h2 class="brand-heading">Karlsruhe</h2>
-
-                    <p class="intro-text">Hier sind Materialien, wie Aufgaben, Tutorials und Beispielprogramme zu den im
-                        CoderDojo verwendeten Sprachen zu finden.</p>
-
-                    <p>
-                        <b style="color: darkred; font-size: 24pt">Diese Seite ist noch im Aufbau</b>
-                    </p>
-                    <a href="#general" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 
 <section id="general" class="content-section text-center">
     <div class="container">
@@ -134,7 +108,7 @@
 
             <div class="col-lg-8 col-lg-offset-2">
 
-                <h2>Allgemeine Links</h2>
+                <h2>Für Einsteiger</h2>
 
                 <ul>
                     <li>Online Einsteiger-Kurse auf Code.org:
@@ -226,6 +200,10 @@
                         <a href="http://scratch-dach.info/wiki/Hauptseite">http://scratch-dach.info/wiki/Hauptseite</a>
                     </li>
                     <li>
+                        Viele Beispiele mit Erkläurung des <a
+                            href="http://coderdojo-linz.github.io/infos/uebungsbeispiele.html">CoderDojo Linz</a>
+                    </li>
+                    <li>
                         Eine Scratch Übersicht auf Englisch:
                         <a href="http://scratched.gse.harvard.edu/guide/files/CreativeComputing20141015.pdf">englische
                             Übersicht</a>
@@ -311,10 +289,6 @@
                         <a href="http://www.python-kurs.eu/python3_kurs.php">Python 3 Einführung (Menü links
                             beachten)</a>
                     </li>
-                    <li>Tkinter Tutorial
-                        <a href="http://www.python-kurs.eu/python_tkinter.php">Tkinter Tutorial (Menü links
-                            beachten)</a>
-                    </li>
                 </ul>
                 </p>
 
@@ -322,14 +296,14 @@
 
                 <p>
                     Wir sind dabei eine <a
-                        href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Befehlsübersicht/Übersicht.pdf">Befehlsreferenz</a>
+                        href="https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Befehlsreferenz/referenz.pdf">Befehlsreferenz</a>
                     zu erstellen, diese soll als Nachschlagwerk dienen, in der die wichtigsten
                     Begriffe und Konstrukte aufgeführt sind.
                 </p>
 
             </div>
 
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2 margin100top">
                 <h2>Python Tutorials und Aufgaben</h2>
                 <ul class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#basics">Grundlagen</a></li>
@@ -345,7 +319,16 @@
                 <div class="tab-content belt_container">
                     <div id="basics" class="tab-pane fade in active"></div>
                     <div id="progress" class="tab-pane fade"></div>
-                    <div id="py2cd" class="tab-pane fade"></div>
+                    <div id="py2cd" class="tab-pane fade">
+
+                        <h3>Tutorials</h3>
+
+                        <div id="py2cd_tutorials"></div>
+
+                        <h3>Beispiele</h3>
+
+                        <div id="py2cd_examples"></div>
+                    </div>
                     <!--
                     <div id="purple" class="tab-pane fade">
                         Insert content...
@@ -357,18 +340,15 @@
                 </div>
             </div>
 
-            <p></p>
+            <div class="col-lg-8 col-lg-offset-2 margin100top">
 
+                <h3>Beispielprogramme:</h3>
 
-            <h3>Beispielprogramme:</h3>
+                <div id="python_examples"></div>
 
-            <div id="python_examples"></div>
-
-            <p></p>
-
+            </div>
 
         </div>
-    </div>
     </div>
 </section>
 
@@ -402,6 +382,10 @@
 
                 <p>
                 <ul>
+                    <li>
+                        Viele Beispiele mit Erkläurung des <a
+                            href="http://coderdojo-linz.github.io/infos/uebungsbeispiele.html">CoderDojo Linz</a>
+                    </li>
                     <li>
                         <a href="http://de.html.net/tutorials/">http://de.html.net/tutorials/</a>
                     </li>
@@ -490,7 +474,8 @@
         });
 
         MarkdownLoader.load_md('#python_examples', "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Beispiele/README.md");
-        MarkdownLoader.load_md('#py2cd', "https://raw.githubusercontent.com/coderdojoka/py2cd/master/README.md");
+        MarkdownLoader.load_md('#py2cd_tutorials', "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Fortschritte/Tutorials/py2cd/README.md");
+        MarkdownLoader.load_md('#py2cd_examples', "https://raw.githubusercontent.com/coderdojoka/py2cd/master/beispiele/README.md");
         MarkdownLoader.load_md('#basics', "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Grundlagen/README.md");
         MarkdownLoader.load_md('#progress', "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/Fortschritte/README.md");
 

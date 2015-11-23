@@ -10,11 +10,16 @@ hr {
     margin: 100px 0;
 }
 
+.margin100top{
+    margin-top: 100px;
+}
+
 table.markdown {
     margin: 0 auto;
     border: solid 1px #ddd;
     table-layout: auto;
     margin-bottom: 5em;
+    width: 100%;
 }
 
 table.markdown thead tr th,
@@ -24,7 +29,6 @@ table.markdown tbody tr th,
 table.markdown tbody tr td,
 table.markdown tr td {
     display: table-cell;
-    line-height: 1.5rem;
 }
 
 table.markdown tbody tr:nth-child(odd) {
@@ -37,6 +41,7 @@ table.markdown tr td {
     text-align: left;
     padding: .5em 5px;
     line-height: 1.5;
+    border: 1px solid lightgray;
 }
 
 #lang_chooser {
