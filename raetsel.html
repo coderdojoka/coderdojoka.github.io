@@ -195,8 +195,9 @@
 
 <!-- Aktuelles Rätsel laden -->
 <script>
+    var url = "https://raw.githubusercontent.com/coderdojoka/coderdojoka.github.io/master/raetsel/";
     window.onload = function () {
-        MarkdownLoader.load_md('#puzzle', "raetsel/wer_wars.md");
+        MarkdownLoader.load_md('#puzzle', url + "wer_wars.md");
     }
 
 </script>
