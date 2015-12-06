@@ -18,16 +18,30 @@ $(document).ready(collapseNavbar);
 
 var MarkdownLoader = {
 
-    converter: new showdown.Converter({tables: true}),
+    converter: null, // lazy init
 
-    load_md: function (selector, url) {
+    load_md: function (selector, url, extras) {
+
+        if(!MarkdownLoader.converter){
+            MarkdownLoader.converter = new showdown.Converter({tables: true});
+        }
 
         var $container = $(selector);
         $container.empty().append("Lade Inhalt. Bitte warten...");
 
         $.get(url).done(function (data) {
+
+            // check if the markdown has a yaml/pandoc-style header
+            if (data.indexOf && data.indexOf("---") === 0 && data.indexOf("---", 4) !== -1) { // starts with --- .... ---
+                data = data.substr(data.indexOf("---", 4) + 3);
+            }
+
             var html = MarkdownLoader.converter.makeHtml(data);
-            $container.empty().append(html);
+            if (extras) {
+                $container.empty().append(extras).append(html);
+            } else {
+                $container.empty().append(html);
+            }
             $container.find("table").addClass("markdown");
 
         }).fail(function (a, b) {
@@ -67,40 +81,3 @@ $('.navbar-nav > li.dropdown.hidden-xs').hover(function () {
         $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
         $(this).removeClass('open');
     });
-
-
-// Google Maps Scripts
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-
-function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 15,
-
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(49.0138084, 8.419531), // SR131 KIT
-
-        // Disables the default Google Maps UI components
-        disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false
-    };
-
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
-
-    // Create the Google Map using out element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
-
-    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(49.0138084, 8.419531);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
-        map: map
-    });
-}

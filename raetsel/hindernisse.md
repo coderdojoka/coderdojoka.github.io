@@ -1,7 +1,15 @@
-Jemand hast deinen Roboter gestohlen und ihn in einem Hindernis-Parkour platziert. Glücklicherweise hast Du am Tag zuvor den Roboter so programmiert, dass er selbstständig Hindernisse umfahren kann und sich zum Ausgang hinbewegt.
+---
+titel: Roboter im Labyrinth    
+autor: Mark Weinreuter  
+datum: 6.11.15  
+version: 0.1  
+---
+
+Jemand hast deinen Roboter gestohlen und ihn in einem Hindernis-Parkour platziert. 
+Glücklicherweise hast Du am Tag zuvor den Roboter so programmiert, dass er selbstständig Hindernisse umfahren kann und sich zum Ausgang hinbewegt.
 Das Programm, dem der Roboter folgt, sie wie folgt aus:
 
-#### Das Programm wird durch folgende Schritte (auch Algorithmus genannt) beschrieben:
+#### Das Programm wird durch diese Schritte (auch Algorithmus genannt) beschrieben:
 
 > 1. Gehe in Richtung Ziel vorwärts bis du auf ein Hindernis triffst. Gehe dann zu Schritt 2. Kommst du ins Ziel ohne auf ein Hindernis zu treffen, dann bleibe stehen, du hast es geschafft!
 > 2. Laufe einmal komplett um das Hindernis herum und finde den Punkt, der dem Ziel am nächsten liegt. Der Roboter hast dafür Sensoren, du musst ggf nachmessen oder dich auf dein Augenmaß verlassen =). Weiter mit Schritt 3. 

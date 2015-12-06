@@ -1,3 +1,10 @@
+---
+titel: Zeichencode  
+autor: Mark Weinreuter    
+datum: 20.11.15  
+version: 0.2    
+---
+
 Die drei Ninjas Karl, Bruno, Leyla haben ein geheimes Süßigkeitenversteck.
 Damit ihr Sensei sie ihnen nicht weg isst, haben sie die Süßigkeiten gut versteckt.
 Damit sie selbst nicht vergessen wo sie die Süßigkeiten versteckt haben,

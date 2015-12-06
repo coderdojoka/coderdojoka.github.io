@@ -196,19 +196,7 @@
 <!-- Aktuelles Rätsel laden -->
 <script>
     window.onload = function () {
-
-        var $container = $('#puzzle');
-
-        // py2cd/master/README.md
-        $.get("raetsel/zeichen_code.md").done(function (data) {
-
-            var converter = new showdown.Converter({tables: true});
-            var html = converter.makeHtml(data);
-
-            $container.empty().append(html);
-        }).fail(function () {
-            $container.empty().append("Es ist ein Fehler beim Laden des Rätsels aufgetreten... :(");
-        });
+        MarkdownLoader.load_md('#puzzle', "raetsel/wer_wars.md");
     }
 
 </script>

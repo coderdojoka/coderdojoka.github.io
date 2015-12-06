@@ -116,7 +116,11 @@
 
                 <h2>Alte Rätsel</h2>
                 <ul id="old_puzzles">
-                    <li data-md="zeichen_code.md" title="Text entschlüsseln"><a href="#old_puzzles">Text verschlüsseln</a> (20.11.2015)</li>
+                    <li data-md="wer_wars.md" title="Wer wars?"><a href="#old_puzzles">Wer wars?</a> (04.12.2015)
+                    </li>
+                    <li data-md="zeichen_code.md" title="Text entschlüsseln"><a href="#old_puzzles">Text
+                        verschlüsseln</a> (20.11.2015)
+                    </li>
                     <li data-md="hindernisse.md" title="Roboter im Labyrinth"><a
                             href="#old_puzzles">Roboter-Labyrinth</a> (4.11.2015)
                     </li>
@@ -175,16 +179,8 @@
         });
 
         function loadPuzzle(name, title) {
-            $container.text("Lade Rätsel...");
-            $.get(url + name).done(function (data) {
 
-                var converter = new showdown.Converter({tables:true});
-                var html = converter.makeHtml(data);
-
-                $container.empty().append("<h2>" + title + "</h2>").append(html);
-            }).fail(function () {
-                $container.empty().append("Es ist ein Fehler beim Laden des Rätsels aufgetreten... :(");
-            });
+            MarkdownLoader.load_md('#puzzle_view', url + name, "<h2>" + title + "</h2>");
         }
     }
 
