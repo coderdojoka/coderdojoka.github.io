@@ -7,7 +7,7 @@ titel: Weihnachtsbaum
 
 Ein interessantes Problem der Informatik ist die Frage:  
 
-> "Wie viele Farben werden benötigt um einen Landkarte einzufärben,
+> "Wie viele Farben werden benötigt um eine Landkarte einzufärben
 > ohne das zwei aneinander grenzende Flächen die gleiche Farbe haben."
 
 Für wen sich das jetzt einfach anhört, probiert es am Besten selbst mal aus. Da dies allerdings das Weihnachtsrätsel ist, musst du keine Landkarte einfärben sondern einen Weihnachtsbaum!  
@@ -25,7 +25,7 @@ Es gelten folgende Regeln:
     
 ## Zusatzaufgabe: Reichen 3 Farben aus?
 
-Kann man das Bild auch mit nur 3 verschiedenen Farben anmalen, ohne das zwei gleichfarbige Flächen aneinander grenzen? Falls nicht, nenne eine Stelle an der es nicht klappt.
+Kann man das Bild auch mit nur 3 verschiedenen Farben anmalen, ohne das zwei gleichfarbige Flächen aneinander grenzen? Falls nicht, nenne eine Stelle bei der es nicht klappt.
         
  
 ### Weiterführende Links:
