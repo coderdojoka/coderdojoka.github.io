@@ -626,6 +626,11 @@ body {
     font-weight: bold;
 }
 
+#timeline .join_data {
+    color: #42dca3;
+    font-weight: bold;
+}
+
 .timeline-item a {
     color: #000;
     border-bottom: 1px dashed #42dca3;
