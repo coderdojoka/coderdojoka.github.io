@@ -758,3 +758,51 @@ body {
     border-bottom: 20px solid transparent;
     margin-right: 10px;
 }
+
+.neues{
+	
+	width: 80%;
+	margin: 100px auto;
+	
+}
+
+.neues p{
+	text-align: left;
+	margin: 60px auto 30px auto;
+
+}
+
+.le{
+	float: left;
+}
+.ri{
+	float: right;
+}
+
+#balken{
+	margin: 60px auto;
+}
+
+#float_neu{
+
+
+}
+
+.sichtbar_halb{
+
+	display: none;
+
+}
+
+#float_neu:after{
+	content:'';
+    display:block;
+    clear: both;
+}
+@media (min-width:650px){
+.sichtbar_halb{
+
+	display: block;
+
+}
+}
