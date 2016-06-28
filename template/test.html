@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="prism.css" rel="stylesheet">
+    <script href="prism.js"></script>
+</head>
+<body>
+
+<h1 id="nützliche-module">Nützliche Module</h1>
+<h2 id="zufallszahlen">Zufallszahlen</h2>
+<p>Will man eine Zufallszahl erzeugen, kann man dies mit dem Modul <code>random</code> tun.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># das random Modul muss (einmal) importiert werden um die Funktion random.randint() verwenden zu können</span>
+<span class="im">import</span> random
+
+<span class="co"># generiert eine Zufallszahl zwischen 1 und 100</span>
+zufallsZahl <span class="op">=</span> random.randint(<span class="dv">1</span>,<span class="dv">100</span>)
+<span class="bu">print</span>(zufallsZahl)</code></pre></div>
+<h2 id="aktuelles-datum">Aktuelles Datum</h2>
+<p>Über das Modul <code>datetime</code> kann man das aktuelle Datum abfragen.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Das Paket datetime einmal importieren</span>
+<span class="im">import</span> datetime
+
+<span class="co"># aktuelles Datum abfragen</span>
+heute <span class="op">=</span> datetime.datetime.now()
+
+jahr <span class="op">=</span> heute.year
+monat <span class="op">=</span> heute.month
+tag <span class="op">=</span> heute.day</code></pre></div>
+<h2 id="die-aktuelle-zeit-in-sekunden">Die aktuelle Zeit in Sekunden</h2>
+<p>Du kannst die aktuelle Zeit in Sekunden mithilfe des Moduls <code>time</code> ermitteln:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Das Paket time einmal importieren</span>
+<span class="im">import</span> time
+
+<span class="co"># aktuelle Zeit in Sekunden</span>
+sekunden <span class="op">=</span> time.time()</code></pre></div>
+
+</body>
+</html>

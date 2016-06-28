@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
+  margin-bottom: 4px;
+}
+h3 {
+  margin-bottom: 20px;
+}
+#search {
+  margin-bottom: 50px;
+}
+#search input {
+  padding: 5px;
+  font-size: 14pt;
+  line-height: 1;
+  width: 100%;
+}
+#viewer {
+  text-align: left;
+}
+#viewer code {
+  font-size: 14pt;
+}
+#results {
+  list-style: none;
+  padding: 0;
+}
+#results > ul {
+  padding: 0;
+}
+#results * {
+  text-align: left;
+}
+#results ul {
+  list-style: none;
+}
+#results hr {
+  margin: 5px 0 16px 0;
+}
+.e_res {
+  background-color: #fafafa;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.e_res:hover {
+  background-color: #f0f0f0;
+}
+.e_name {
+  margin: 0;
+}
+.e_desc {
+  font-size: 10pt;
+}
+.e_cat_name {
+  margin-bottom: 4px;
+}

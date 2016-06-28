@@ -1,0 +1,16 @@
+h1 {
+  padding: 20px;
+  background-color: #ffdb36;
+  text-align: center;
+}
+.content_section {
+  margin-left: 40px;
+}
+h2 {
+  padding: 12px;
+  background-color: #ffb400;
+}
+h3 {
+  padding: 10px;
+  background-color: #61bf00;
+}

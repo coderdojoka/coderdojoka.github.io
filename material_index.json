@@ -1,0 +1,108 @@
+{
+  "tags": {
+    "io": "Dateien",
+    "input": "Eingabe",
+    "random": "Zufallszahlen",
+    "list": "Listen"
+  },
+  "level": {
+    "l1": "Einsteiger",
+    "l2": ""
+  },
+  "categories": [
+    {
+      "name": "Tutorial",
+      "categories": [{
+        "name": "Variablen",
+        "entries": [{
+          "type": "html",
+          "uri": "Grundlagen/Tutorials/Variablen/Variablen.md",
+          "name": "Einführung in Variablen",
+          "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
+          "tags": ["vars"]
+        }]
+      }]
+    },
+    {
+      "name": "Beispiele",
+      "categories": [
+        {
+          "name": "Eingabe",
+          "entries": [
+            {
+              "type": "code",
+              "uri": "Beispiele/eingabe.py",
+              "desc": "Lass den Benutzer seinen Namen und Alter eingeben.",
+              "name": "Eingaben lesen mit input(..)",
+              "tags": [
+                "list"
+              ],
+              "level": "l1"
+            }
+          ]
+        },
+        {
+          "name": "Dateien",
+          "entries": [
+            {
+              "type": "code",
+              "uri": "Beispiele/datei_lesen.py",
+              "desc": "Eine einfache Textdatei als Text und als Liste von Zeilen lesen.",
+              "name": "Eine Datei lesen",
+              "tags": [
+                "io"
+              ],
+              "level": "l1"
+            },
+            {
+              "type": "code",
+              "uri": "Beispiele/helfer.py",
+              "desc": "Hier sind Hilfsfunktionen zum Schreiben und Lesen von Dateien. Du kannst diese direkt verwenden um bequem einen Datei zu lesen oder zu schreiben.",
+              "name": "Hilfsfunktionen um Dateien zu schreiben/lesen",
+              "tags": [
+                "io"
+              ],
+              "level": "l2"
+            }
+          ]
+        },
+        {
+          "name": "Listen",
+          "entries": [
+            {
+              "type": "code",
+              "uri": "Beispiele/listen.py",
+              "desc": "Ein kleines Beispiel, dass nützliche Funktionen und Operationen mit Listen zeigt.",
+              "name": "Funktionen mit Listen",
+              "tags": [
+                "list"
+              ],
+              "level": "l1"
+            }
+          ]
+        },
+        {
+          "name": "Sonstiges",
+          "entries": [
+            {
+              "type": "code",
+              "uri": "Beispiele/schleife_pi.py",
+              "desc": "Nähert die Zahl Pi über ein Zufallsverfahren an.",
+              "name": "Pi annhähern",
+              "tags": [
+                "random",
+                "for",
+                "math"
+              ],
+              "level": "l1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Links",
+      "categories": []
+    }
+  ]
+}
