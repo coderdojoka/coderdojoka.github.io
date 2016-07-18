@@ -519,6 +519,11 @@ body {
     border-bottom-left-radius: 50%;
 }
 
+#timeline .timeline-badge span {
+    display: inline-block;
+    width: 50px;
+}
+
 #timeline .timeline-badge span.timeline-balloon-date-day {
     font-size: 1.4em;
 }
