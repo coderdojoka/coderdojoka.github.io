@@ -519,13 +519,10 @@ body {
     border-bottom-left-radius: 50%;
 }
 
-#timeline .timeline-badge span {
-    display: inline-block;
-    width: 50px;
-}
-
 #timeline .timeline-badge span.timeline-balloon-date-day {
     font-size: 1.4em;
+    display: inline-block;
+    width: 50px;
 }
 
 #timeline .timeline-badge span.timeline-balloon-date-month {
@@ -533,6 +530,8 @@ body {
     position: relative;
     top: -10px;
     text-transform: uppercase;
+    display: inline-block;
+    width: 50px;
 }
 
 #timeline .timeline-badge.timeline-filter-movement {
