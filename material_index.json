@@ -11,17 +11,56 @@
   },
   "categories": [
     {
-      "name": "Tutorial",
+      "name": "Übersicht",
       "categories": [{
-        "name": "Variablen",
+        "name": "Grundlagen",
         "entries": [{
           "type": "html",
-          "uri": "Grundlagen/Tutorials/Variablen/Variablen.md",
-          "name": "Einführung in Variablen",
+          "uri": "template/1_grundlagen.html",
+          "name": "Kommentare, Variablen und Ausgabe",
+          "desc" : "Hier wird erklärt, was Kommentare sind, man Variablen erstellt und diese ausgeben kann.",
+          "tags": ["print", "vars"]
+        },
+          {
+            "type": "code",
+            "uri": "template/variable1.py",
+            "name": "Einfaches Beispiel für Variablen",
+            "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
+            "tags": ["vars"]
+          }
+
+        ]
+      }, {
+        "name" : "If-Abfragen",
+        "entries" : [{
+          "type": "html",
+          "uri": "template/2_if_else.html",
+          "name": "Einführung in If-Anfragen",
           "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
-          "tags": ["vars"]
+          "tags": ["if"]
         }]
-      }]
+      }, {
+        "name" : "Schleifen",
+        "entries" : [{
+          "type": "html",
+          "uri": "template/3_schleifen.html",
+          "name": "Einführung in Schleifen",
+          "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
+          "tags": ["if"]
+        }]
+      }, {
+        "name" : "If-Abfragen",
+        "entries" : [{
+          "type": "html",
+          "uri": "template/2_if_else.html",
+          "name": "Einführung in If-Anfragen",
+          "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
+          "tags": ["if"]
+        }]
+      }
+
+
+      ]
     },
     {
       "name": "Beispiele",

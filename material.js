@@ -5,18 +5,12 @@
 
 var CAT_TEMPLATE =
     '<li>' +
-    '   <h4 class="e_cat_name">##name##</h4>' +
+    '   <h##level## class="e_cat_name">##name##</h##level##>' +
     '   <ul></ul>' +
     '</li>';
 
-var ENTRY_TEMPLATE =
-    '<li class="e_res">' +
-    '   <h5 class="e_name">##name##</h5>' +
-    '   <div class="e_desc">##desc##</div>' +
-    '</li>';
-
 var CodoKa = {
-    URL_PREFIX: "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/",
+    URL_PREFIX: "", //https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/
     materialIndex: {
         tags: {},
         level: {},
@@ -24,88 +18,98 @@ var CodoKa = {
     },
 
     init: function () {
-        this.$results = $('#results');
-        this.$viewer = $('#viewer');
+        this.$materials = $('#materials');
+        this.$viewer = $('#viewer').hide();
+        this.$searchResults = $('#search_results').hide();
+
+        this.$search = $('#search');
+        this.$searchField = this.$search.find("input").keyup(function () {
+            this.search(this.$searchField.val());
+        }.bind(this));
+        this.$searchResultsList = this.$searchResults.find("> ul");
         this.$viewerContent = this.$viewer.find('#content');
         this.$btnBack = this.$viewer.find('#btn_back').click(function () {
-            CodoKa.showSearch();
+            CodoKa.showMaterials();
         });
 
         $.getJSON("material_index.json", function (data) {
             CodoKa.materialIndex = data;
 
-            CodoKa._gen_categories(CodoKa.materialIndex.categories, CodoKa.$results.empty());
+            CodoKa._gen_categories(CodoKa.materialIndex.categories, CodoKa.$materials.find(">ul").empty(), 2);
         });
     },
 
-    showSearch: function (entry) {
-        this.$results.show();
+    showMaterials: function () {
+        this.$materials.show();
         this.$viewer.hide();
+        this.$searchResults.hide();
     },
 
     showViewer: function (entry) {
-        this.$results.hide();
+        this.$materials.hide();
+        this.$searchResults.hide();
         this.$viewer.show();
 
         this.$viewerContent.empty().append("<span>Lade...</span>");
 
         $.get(CodoKa.URL_PREFIX + entry.uri).done(function (data) {
 
-            var content = '<h4>' + entry.name + '</h4><div>' + entry.desc + '</div>';
+            var content = '<h2>' + entry.name + '</h2><div>' + entry.desc + '</div>';
             if (entry.type === "html") {
 
                 content = '<div>' + data + '</div>';
-            }
-            else if (entry.type === "code") {
+            } else if (entry.type === "code") {
                 var html = Prism.highlight(data, Prism.languages.python);
                 content += '<pre><code class="language-python">' + html + '</code></pre>';
             }
 
             this.$viewerContent.empty().append(content);
-            if(entry.type === "code"){
-                Prism.highlight($(content).find('code')[0]);
-            }
+            //if (entry.type === "code") {
+            //$(content).find('pre').each(function () {
+            Prism.highlightAll();
+            //});
+            //}
 
         }.bind(this)).fail(function () {
             this.$viewerContent.empty().append("<span>Es ist ein Fehler aufgetreten :(</span>");
         }.bind(this));
     },
 
-    _gen_entries: function (entries, $parent) {
+    _gen_entries: function (entries, $parent, level) {
         for (var i = 0; i < entries.length; i++) {
 
-            var text = "";
-            var ent = ENTRY_TEMPLATE.replace('##name##', entries[i]['name']);
-            text += ent.replace('##desc##', entries[i]['desc']);
-
-            var $ele = $(text);
+            var li = document.createElement('li'), $li = $(li);
             (function () {
                 var entry = entries[i];
+                li.entry = entry;
+                $li.addClass("e_res");
+                $li.append('<h' + level + ' class="e_name">' + entry['name'] + '</h' + level + '>' + '<div class="e_desc">'
+                    + '</div>' + entry['desc']);
 
-                $ele.click(function () {
+                $li.click(function () {
                     console.log(entry);
                     CodoKa.showViewer(entry);
                 });
             })();
 
-            $parent.append($ele);
+            $parent.append($li);
         }
 
 
     },
 
-    _gen_categories: function (cats, $parent) {
+    _gen_categories: function (cats, $parent, level) {
 
 
         for (var i = 0; i < cats.length; i++) {
             var content, cat = cats[i];
-            var $tmp = $(CAT_TEMPLATE.replace("##name##", cat["name"]));
+            var $tmp = $(CAT_TEMPLATE.replace("##name##", cat["name"]).replace("##level##", "" + level).replace("##level##", "" + level));
 
             if (cat.hasOwnProperty("categories")) {
-                content = CodoKa._gen_categories(cat["categories"], $tmp.find('ul'));
+                content = CodoKa._gen_categories(cat["categories"], $tmp.find('ul'), Math.min(6, level + 1));
 
             } else {
-                content = CodoKa._gen_entries(cat["entries"], $tmp.find('ul'));
+                content = CodoKa._gen_entries(cat["entries"], $tmp.find('ul'), "" + Math.min(6, level + 1));
             }
 
             $parent.append($tmp);
@@ -113,9 +117,20 @@ var CodoKa = {
     },
 
 
-    search: function (lang, query, tag, type, level) {
-        var entries = this.materialIndex[lang];
+    search: function (query, tag, type, level) {
+        var entries = [];//this.materialIndex[lang];
         var results = [];
+
+        query = query.trim().toLowerCase();
+        if(query.length == 0){
+            CodoKa.showMaterials();
+            return;
+        }
+
+        this.$materials.hide();
+        this.$viewer.hide();
+        this.$searchResults.show();
+        this.$searchResultsList.empty();
 
         for (var i = 0; i < entries.length; i++) {
             var entry = entries[i];
@@ -124,10 +139,20 @@ var CodoKa = {
                 continue;
             }
 
-            query = query.trim();
             if (query == "" || CodoKa._text_search(entry.name, query))
                 results.push(entry);
         }
+
+        var self = this;
+        $('.e_name').each(function () {
+            console.log(this.innerHTML);
+
+            if (this.innerHTML.toLowerCase().indexOf(query) > -1) {
+                console.log(this);
+                self.$searchResultsList.append($(this).parent().clone(true, true));
+            }
+        });
+
     }
     ,
 
