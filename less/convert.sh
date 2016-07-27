@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-lessc mat2.less ../mat2.css --verbose
+lessc material_viewer.less ../css/material_viewer.css --verbose

@@ -2,8 +2,8 @@
  * Created by me on 23.05.16.
  */
 
-var CodoKa = {
-    URL_PREFIX: "", //https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/
+var CodoKaMaterial = {
+    URL_PREFIX: "https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/",
     materialIndex: {
         tags: {},
         level: {},
@@ -22,14 +22,23 @@ var CodoKa = {
         this.$searchResultsList = this.$searchResults.find("> ul");
         this.$viewerContent = this.$viewer.find('#content');
         this.$btnBack = this.$viewer.find('#btn_back').click(function () {
-            CodoKa.showMaterials();
+            CodoKaMaterial.showMaterials();
         });
 
-        $.getJSON("material_index.json", function (data) {
-            CodoKa.materialIndex = data;
+        $.getJSON("python_material_index.json", function (data) {
+            CodoKaMaterial.materialIndex = data;
 
-            CodoKa._gen_categories(CodoKa.materialIndex.categories, CodoKa.$materials.find(">ul").empty(), 2);
+            CodoKaMaterial._gen_categories(CodoKaMaterial.materialIndex.categories, CodoKaMaterial.$materials.find(">ul").empty(), 2);
         });
+    },
+
+    parseQueryString: function (val) {
+        var result = "Not found", tmp = [];
+        location.search.substr(1).split("&").forEach(function (item) {
+            tmp = item.split("=");
+            if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
+        });
+        return result;
     },
 
     showMaterials: function () {
@@ -45,7 +54,7 @@ var CodoKa = {
 
         this.$viewerContent.empty().append("<span>Lade...</span>");
 
-        $.get(CodoKa.URL_PREFIX + entry.uri).done(function (data) {
+        $.get(CodoKaMaterial.URL_PREFIX + entry.uri).done(function (data) {
 
             var content = '<h2>' + entry.name + '</h2><div>' + entry.desc + '</div>';
             if (entry.type === "html") {
@@ -80,7 +89,7 @@ var CodoKa = {
 
                 $li.click(function () {
                     console.log(entry);
-                    CodoKa.showViewer(entry);
+                    CodoKaMaterial.showViewer(entry);
                 });
             })();
 
@@ -97,9 +106,9 @@ var CodoKa = {
             var $ele = $('<li class="e_cat"></li>').append($header).append($('<ul></ul>'));
 
             if (cat.hasOwnProperty("categories")) {
-                CodoKa._gen_categories(cat["categories"], $ele.find('ul'), Math.min(4, level + 1));
+                CodoKaMaterial._gen_categories(cat["categories"], $ele.find('ul'), Math.min(4, level + 1));
             } else {
-                CodoKa._gen_entries(cat["entries"], $ele.find('ul'));
+                CodoKaMaterial._gen_entries(cat["entries"], $ele.find('ul'));
             }
 
             $parent.append($ele);
@@ -113,7 +122,7 @@ var CodoKa = {
 
         query = query.trim().toLowerCase();
         if (query.length == 0) {
-            CodoKa.showMaterials();
+            CodoKaMaterial.showMaterials();
             return;
         }
 
@@ -129,13 +138,13 @@ var CodoKa = {
                 self.$searchResultsList.append($(this).parent().clone(true, true));
             }
         });
-        if(this.$searchResultsList.children().length == 0){
+        if (this.$searchResultsList.children().length == 0) {
             self.$searchResultsList.append("Keine Treffer gefunden :(");
         }
     }
 };
 
 $(function () {
-    CodoKa.init();
+    CodoKaMaterial.init();
 });
 
