@@ -89,7 +89,7 @@
                     <a class="scroll_to" href="#scratch">Scratch</a>
                 </li>
                 <li>
-                    <a class="scroll_to" href="#python">Python</a>
+                    <a class="scroll_to" href="material_python.html">Python</a>
                 </li>
                 <li>
                     <a class="scroll_to" href="#html">HTML</a>
@@ -150,7 +150,7 @@
                                 <div>
                                     <img src="img/python.svg">
 
-                                    <a>Python</a>
+                                    <a href="material_python.html">Python</a>
                                 </div>
                             </div>
 
@@ -446,10 +446,12 @@
 
     $(document).ready(function () {
 
-
-        $(".lang_con").click(function () {
+        $(".lang_con").not('#lang_python').click(function () {
             var lang = $(this).attr("id").substr(5);
             highlight(lang);
+        });
+        $('#lang_python').click(function () {
+            window.location.href = "material_python.html";
         });
 
         $("nav a.scroll_to").click(function (event) {
