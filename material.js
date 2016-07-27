@@ -2,13 +2,6 @@
  * Created by me on 23.05.16.
  */
 
-
-var CAT_TEMPLATE =
-    '<li>' +
-    '   <h##level## class="e_cat_name">##name##</h##level##>' +
-    '   <ul></ul>' +
-    '</li>';
-
 var CodoKa = {
     URL_PREFIX: "", //https://raw.githubusercontent.com/coderdojoka/Materialien/master/Python/
     materialIndex: {
@@ -83,8 +76,7 @@ var CodoKa = {
                 var entry = entries[i];
                 li.entry = entry;
                 $li.addClass("e_res");
-                $li.append('<h' + level + ' class="e_name">' + entry['name'] + '</h' + level + '>' + '<div class="e_desc">'
-                    + '</div>' + entry['desc']);
+                $li.append('<h5 class="e_name">' + entry['name'] + '</h5><div class="e_desc">' + entry['desc'] + '</div>');
 
                 $li.click(function () {
                     console.log(entry);
@@ -94,25 +86,23 @@ var CodoKa = {
 
             $parent.append($li);
         }
-
-
     },
 
     _gen_categories: function (cats, $parent, level) {
 
 
         for (var i = 0; i < cats.length; i++) {
-            var content, cat = cats[i];
-            var $tmp = $(CAT_TEMPLATE.replace("##name##", cat["name"]).replace("##level##", "" + level).replace("##level##", "" + level));
+            var cat = cats[i];
+            var $header = $('<h' + level + '></h' + level + '>').text(cat["name"]);
+            var $ele = $('<li class="e_cat"></li>').append($header).append($('<ul></ul>'));
 
             if (cat.hasOwnProperty("categories")) {
-                content = CodoKa._gen_categories(cat["categories"], $tmp.find('ul'), Math.min(6, level + 1));
-
+                CodoKa._gen_categories(cat["categories"], $ele.find('ul'), Math.min(4, level + 1));
             } else {
-                content = CodoKa._gen_entries(cat["entries"], $tmp.find('ul'), "" + Math.min(6, level + 1));
+                CodoKa._gen_entries(cat["entries"], $ele.find('ul'));
             }
 
-            $parent.append($tmp);
+            $parent.append($ele);
         }
     },
 
@@ -122,7 +112,7 @@ var CodoKa = {
         var results = [];
 
         query = query.trim().toLowerCase();
-        if(query.length == 0){
+        if (query.length == 0) {
             CodoKa.showMaterials();
             return;
         }
@@ -132,39 +122,20 @@ var CodoKa = {
         this.$searchResults.show();
         this.$searchResultsList.empty();
 
-        for (var i = 0; i < entries.length; i++) {
-            var entry = entries[i];
-            if ((tag && entry.tag != tag ) || (type && entry.type != type ) ||
-                (level && entry.level != level)) {
-                continue;
-            }
-
-            if (query == "" || CodoKa._text_search(entry.name, query))
-                results.push(entry);
-        }
 
         var self = this;
         $('.e_name').each(function () {
-            console.log(this.innerHTML);
-
             if (this.innerHTML.toLowerCase().indexOf(query) > -1) {
-                console.log(this);
                 self.$searchResultsList.append($(this).parent().clone(true, true));
             }
         });
-
-    }
-    ,
-
-    _text_search: function () {
-        return true;
+        if(this.$searchResultsList.children().length == 0){
+            self.$searchResultsList.append("Keine Treffer gefunden :(");
+        }
     }
 };
 
 $(function () {
-    "use strict";
-
     CodoKa.init();
-
-
 });
+
