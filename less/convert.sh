@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-lessc mat_theme.less ../mat_theme.css --verbose
+lessc mat2.less ../mat2.css --verbose

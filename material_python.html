@@ -23,6 +23,7 @@
     <link href="css/coderdojoka.css" rel="stylesheet">
     <link href="css/material.css" rel="stylesheet">
     <link href="mat2.css" rel="stylesheet">
+    <link href="prism.css" rel="stylesheet">
 
 
     <link href="css/prism.css" rel="stylesheet">
@@ -114,30 +115,38 @@
 
 
                 <div id="search">
-                    <h3>Suche:</h3>
+                    <h1>Suche:</h1>
                     <input type="text" placeholder="Zum Suchen tippen">
                 </div>
 
-                <h3>Ergebnisse:</h3>
-                <ul id="results">
-                    <li>
-                        <h4 class="e_cat_name">Beispiele</h4>
-                        <ul>
-                            <li class="e_res">
-                                <h5 class="e_name">Name</h5>
-                                <div class="e_desc">Beschreibung</div>
-                            </li>
+                <div id="materials">
+                    <h1>Materialien:</h1>
+                    <ul>
+                        <li>
+                            <h4 class="e_cat_name">Beispiele</h4>
+                            <ul>
+                                <li class="e_res">
+                                    <h5 class="e_name">Name</h5>
+                                    <div class="e_desc">Beschreibung</div>
+                                </li>
 
-                            <li class="e_res">
-                                <h5 class="e_name">Name</h5>
-                                <div class="e_desc">Beschreibung</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                                <li class="e_res">
+                                    <h5 class="e_name">Name</h5>
+                                    <div class="e_desc">Beschreibung</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="search_results">
+                    <h1>Treffer:</h1>
+                    <ul></ul>
+                </div>
+
 
                 <div id="viewer">
-                    <a id="btn_back" href="#">Zurück zur Suche</a>
+                    <a id="btn_back" href="#"><-- Alle Materialien</a>
                     <div id="content"></div>
                 </div>
 

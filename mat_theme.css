@@ -1,16 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+pre {
+  border-left: 4px solid cornflowerblue;
+  background-color: #f3f3f3;
+  padding-left: 50px;
+}
 h1 {
-  padding: 20px;
-  background-color: #ffdb36;
   text-align: center;
 }
-.content_section {
-  margin-left: 40px;
-}
 h2 {
-  padding: 12px;
-  background-color: #ffb400;
+  border-bottom: 1px solid #ffb400;
 }
 h3 {
-  padding: 10px;
-  background-color: #61bf00;
+  border-bottom: 1px solid #66b8a0;
+}
+h4 {
+  border-bottom: 1px solid darkred;
+}
+.content_section {
+  font-size: 13pt;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+.content_sub_section {
+  font-size: 13pt;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }

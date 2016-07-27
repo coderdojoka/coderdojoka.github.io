@@ -1,0 +1,56 @@
+@author: Mark Weinreuter;
+@pl_code: 25px;
+
+@ml_section: 40px;
+@mb_section: 30px;
+@ml_sub_section: 20px;
+@mb_sub_section: 20px;
+
+@fs_content: 13pt;
+
+#viewer {
+
+  @import "codo_theme";
+
+  p{
+    margin-bottom: 5px;
+  }
+
+  pre {
+    border-left: 4px solid cornflowerblue;
+    background-color: #f3f3f3;
+    padding-left: @pl_code;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    border-bottom: 1px solid #ffb400;
+    margin-top: 50px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    border-bottom: 1px solid #66b8a0;
+  }
+
+  h4 {
+    margin-top: 20px;
+    border-bottom: 1px solid darkred;
+  }
+
+  .content_section {
+    font-size: @fs_content;
+    margin-left: @ml_section;
+    margin-bottom: @mb_section;
+  }
+
+  .content_sub_section {
+    font-size: @fs_content;
+    margin-left: @ml_sub_section;
+    margin-bottom: @mb_sub_section;
+  }
+}
