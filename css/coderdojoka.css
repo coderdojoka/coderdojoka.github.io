@@ -521,12 +521,17 @@ body {
 
 #timeline .timeline-badge span.timeline-balloon-date-day {
     font-size: 1.4em;
+    display: inline-block;
+    width: 50px;
 }
 
 #timeline .timeline-badge span.timeline-balloon-date-month {
     font-size: .7em;
     position: relative;
     top: -10px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 50px;
 }
 
 #timeline .timeline-badge.timeline-filter-movement {
@@ -760,27 +765,27 @@ body {
 }
 
 .neues{
-	
-	width: 80%;
-	margin: 100px auto;
-	
+
+    width: 80%;
+    margin: 100px auto;
+
 }
 
 .neues p{
-	text-align: left;
-	margin: 60px auto 30px auto;
+    text-align: left;
+    margin: 60px auto 30px auto;
 
 }
 
 .le{
-	float: left;
+    float: left;
 }
 .ri{
-	float: right;
+    float: right;
 }
 
 #balken{
-	margin: 60px auto;
+    margin: 60px auto;
 }
 
 #float_neu{
@@ -790,19 +795,19 @@ body {
 
 .sichtbar_halb{
 
-	display: none;
+    display: none;
 
 }
 
 #float_neu:after{
-	content:'';
+    content:'';
     display:block;
     clear: both;
 }
 @media (min-width:650px){
 .sichtbar_halb{
 
-	display: block;
+    display: block;
 
 }
 }
