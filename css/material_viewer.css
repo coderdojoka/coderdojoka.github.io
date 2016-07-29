@@ -1,7 +1,11 @@
 #viewer {
   text-align: left;
 }
+#viewer #btn_back {
+  margin-bottom: 15px;
+}
 #viewer * {
+  text-align: left;
   font-size: 12pt;
 }
 #viewer img {
@@ -30,8 +34,7 @@
   padding-left: 25px;
 }
 #viewer h1 {
-  text-align: center;
-  margin-bottom: 50px;
+  margin: 25px 0;
   font-size: 1.8em;
 }
 #viewer h2 {

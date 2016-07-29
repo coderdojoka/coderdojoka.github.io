@@ -3,14 +3,14 @@
     "io": "Dateien",
     "input": "Eingabe",
     "random": "Zufallszahlen",
-    "list": "Listen"
+    "list": "Listen",
+    "text": "Texte",
+    "def": "Funktionen"
   },
   "level": {
     "l1": "Einsteiger",
     "l2": ""
   },
-
-
   "categories": [
     {
       "name": "Python-Referenz",
@@ -33,13 +33,15 @@
           "tags": [
             "if"
           ]
-        },{
+        },
+        {
           "type": "html",
           "uri": "Befehlsreferenz/3_schleifen.html",
           "name": "Einführung in Schleifen",
           "desc": "Hier wird erklärt, wie man Code wiederholt ausführen kann und welche Arten von Schleifen es gibt.",
           "tags": [
-            "for", "while"
+            "for",
+            "while"
           ]
         },
         {
@@ -59,7 +61,8 @@
           "tags": [
             "list"
           ]
-        },{
+        },
+        {
           "type": "html",
           "uri": "Befehlsreferenz/6_funktionen.html",
           "name": "Funktionen verwenden",
@@ -67,13 +70,113 @@
           "tags": [
             "def"
           ]
-        },{
+        },
+        {
           "type": "html",
           "uri": "Befehlsreferenz/10_module.html",
           "name": "Nützliche Dinge",
           "desc": "Hier lernst du einige ausgewählte Python-Module kennen, und wie du diese verwenden kannst.",
           "tags": [
-            "random", "time", "date"
+            "random",
+            "time",
+            "date"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aufgaben - CodeBytes",
+      "entries": [
+        {
+          "type": "html",
+          "uri": "CodeBytes/wie_alt/wie_alt.html",
+          "name": "Wie alt bist du?",
+          "desc": "Eine kleine Aufgabe in der du (d)ein Alter über das Geburtsdatum berechnest.",
+          "tags": [
+            "input",
+            "print",
+            "date"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/menschliche_stopuhr/menschliche_stopuhr.html",
+          "name": "Menschliche Stopuhr",
+          "desc": "Wie genau schaffst du es eine Zeit zu stoppen?",
+          "tags": [
+            "time",
+            "input"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/fussball/fb.html",
+          "name": "Fußball - Tore zählen",
+          "desc": "Eine kleine Aufgabe in der das Spielergebnis eines Fußballspiels ermitteln sollst.",
+          "tags": [
+            "input",
+            "print",
+            "while"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/sss/SchereSteinPapier.html",
+          "name": "Schere Stein Papier",
+          "desc": "Eine kleine Aufgabe, um if-Abfragen zu üben.",
+          "tags": [
+            "print",
+            "if"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tutorials",
+      "entries": [
+        {
+          "type": "html",
+          "uri": "Grundlagen/Tutorials/Eingabe/eingabe.html",
+          "name": "Eingaben einlesen",
+          "desc": "Eine kleine Aufgabe in der du (d)ein Alter über das Geburtsdatum berechnest.",
+          "tags": [
+            "input"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "Grundlagen/Tutorials/Variablen/Variablen.html",
+          "name": "Variablen",
+          "desc": "Variablen",
+          "tags": [
+            "vars"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "Grundlagen/Tutorials/if_Abfragen/if_text.html",
+          "name": "If-Abfragen",
+          "desc": "If-Abfragen.",
+          "tags": [
+            "if"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "Grundlagen/Tutorials/Text/Text.html",
+          "name": "Texte",
+          "desc": "Texte.",
+          "tags": [
+            "text"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "Fortschritte/Tutorials/Listen/Listen.html",
+          "name": "Listen",
+          "desc": "Listen",
+          "tags": [
+            "list"
           ]
         }
       ]

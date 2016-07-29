@@ -279,11 +279,27 @@ Prism.languages.python = {
                 var o = (s.match(/\.(\w+)$/) || [, ""])[1];
                 a = e[o] || o
             }
+            var options = JSON.parse(t.getAttribute("data-src")) || "{}";
+            var lastline = options.hasOwnProperty('lastline') ? options['lastline'] : -1;
+            var firstline = options.hasOwnProperty('firstline') ? options['firstline'] : -1;
+
             var l = document.createElement("code");
             l.className = "language-" + a, t.textContent = "", l.textContent = "Loading…", t.appendChild(l);
             var i = new XMLHttpRequest;
             i.open("GET", s, !0), i.onreadystatechange = function () {
-                4 == i.readyState && (i.status < 400 && i.responseText ? (l.textContent = i.responseText, Prism.highlightElement(l)) : l.textContent = i.status >= 400 ? "✖ Error " + i.status + " while fetching file: " + i.statusText : "✖ Error: File does not exist or is empty")
+                if (4 == i.readyState && (i.status < 400 && i.responseText)){
+                  var lines = i.responseText.split(/\r|\n/);
+                  firstline = (firstline > -1 && firstline < lines.length -1) ? firstline : 0;
+                  lastline = (lastline > -1 && lastline < lines.length -1) ? lastline : lines.length-1;
+                  l.textContent = lines.slice(firstline, lastline).join("\n");
+                  Prism.highlightElement(l);
+                }else if (i.status >= 400){
+                  l.textContent = "✖ Error " + i.status + " while fetching file: " + i.statusText;
+                }else {
+                  l.textContent ="✖ Error: File does not exist or is empty";
+                }
+
+
             }, i.send(null)
         })
     }, document.addEventListener("DOMContentLoaded", self.Prism.fileHighlight))
