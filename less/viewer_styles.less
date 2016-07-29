@@ -6,14 +6,40 @@
 @ml_sub_section: 20px;
 @mb_sub_section: 20px;
 
-@fs_content: 13pt;
+@fs_content: 12pt;
 
 #viewer {
+  text-align: left;
 
-  @import "codo_theme";
+  * {
+    font-size: @fs_content;
+  }
 
-  p{
+  img {
+    max-width: 90%;
+    max-height: 400px;
+    height: auto;
+    width: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .column_container {
+    :after {
+      clear: both;
+      height: 0;
+      visibility: hidden;
+      content: "";
+    }
+
+    .column {
+      float: left;
+    }
+  }
+
+  p {
     margin-bottom: 5px;
+
   }
 
   pre {
@@ -25,20 +51,25 @@
   h1 {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 1.8em;
   }
 
   h2 {
-    border-bottom: 1px solid #ffb400;
-    margin-top: 50px;
+    border-bottom: 1px solid #66b8a0;
+    margin: 45px 0 15px 0;
+    font-size: 1.4em;
   }
 
   h3 {
-    margin-top: 20px;
-    border-bottom: 1px solid #66b8a0;
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid #ffb400;
+    font-size: 1.25em;
+
   }
 
   h4 {
-    margin-top: 20px;
+    font-size: 1.1em;
+    margin: 12px 0 5px 0;
     border-bottom: 1px solid darkred;
   }
 

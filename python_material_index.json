@@ -9,57 +9,73 @@
     "l1": "Einsteiger",
     "l2": ""
   },
+
+
   "categories": [
     {
-      "name": "Übersicht",
-      "categories": [{
-        "name": "Grundlagen",
-        "entries": [{
+      "name": "Python-Referenz",
+      "entries": [
+        {
           "type": "html",
           "uri": "Befehlsreferenz/1_grundlagen.html",
-          "name": "Kommentare, Variablen und Ausgabe",
-          "desc" : "Hier wird erklärt, was Kommentare sind, man Variablen erstellt und diese ausgeben kann.",
-          "tags": ["print", "vars"]
+          "name": "Grundlagen: Kommentare, Variablen und Ausgabe",
+          "desc": "Hier wird erklärt, was Kommentare sind, man Variablen erstellt und diese ausgeben kann.",
+          "tags": [
+            "print",
+            "vars"
+          ]
         },
-          {
-            "type": "code",
-            "uri": "Beispiele/variablen.py",
-            "name": "Einfaches Beispiel für Variablen",
-            "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
-            "tags": ["vars"]
-          }
-
-        ]
-      }, {
-        "name" : "If-Abfragen",
-        "entries" : [{
+        {
           "type": "html",
           "uri": "Befehlsreferenz/2_if_else.html",
           "name": "Einführung in If-Anfragen",
-          "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
-          "tags": ["if"]
-        }]
-      }, {
-        "name" : "Schleifen",
-        "entries" : [{
+          "desc": "Hier wird gezeigt, wie man Fallunterscheidungen verwendet und und dein Programm auf verschiedene Eingaben unterschiedlich reagieren lässt.",
+          "tags": [
+            "if"
+          ]
+        },{
           "type": "html",
           "uri": "Befehlsreferenz/3_schleifen.html",
           "name": "Einführung in Schleifen",
-          "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
-          "tags": ["if"]
-        }]
-      }, {
-        "name" : "If-Abfragen",
-        "entries" : [{
+          "desc": "Hier wird erklärt, wie man Code wiederholt ausführen kann und welche Arten von Schleifen es gibt.",
+          "tags": [
+            "for", "while"
+          ]
+        },
+        {
           "type": "html",
-          "uri": "Befehlsreferenz/2_if_else.html",
-          "name": "Einführung in If-Anfragen",
-          "desc" : "Hier wird erklärt, was Variablen sind und wie man sie verwenden kann.",
-          "tags": ["if"]
-        }]
-      }
-
-
+          "uri": "Befehlsreferenz/4_text.html",
+          "name": "Umgang mit Text",
+          "desc": "Hier lernst du, wie du Text erzeugen verändern und durchsuchen kannst.",
+          "tags": [
+            "text"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "Befehlsreferenz/5_listen.html",
+          "name": "Listen verwenden",
+          "desc": "Hier lernst du, wie du Listen verwenden kannst..",
+          "tags": [
+            "list"
+          ]
+        },{
+          "type": "html",
+          "uri": "Befehlsreferenz/6_funktionen.html",
+          "name": "Funktionen verwenden",
+          "desc": "Hier erfährst du, was Funktionen sind und wozu diese gut sind.",
+          "tags": [
+            "def"
+          ]
+        },{
+          "type": "html",
+          "uri": "Befehlsreferenz/10_module.html",
+          "name": "Nützliche Dinge",
+          "desc": "Hier lernst du einige ausgewählte Python-Module kennen, und wie du diese verwenden kannst.",
+          "tags": [
+            "random", "time", "date"
+          ]
+        }
       ]
     },
     {

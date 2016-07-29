@@ -1,7 +1,15 @@
+#viewer {
+  text-align: left;
+}
+#viewer * {
+  font-size: 12pt;
+}
 #viewer img {
-  max-width: 60%;
+  max-width: 90%;
+  max-height: 400px;
   height: auto;
-  margin: 10px auto;
+  width: auto;
+  margin: 20px auto;
   display: block;
 }
 #viewer .column_container :after {
@@ -24,26 +32,30 @@
 #viewer h1 {
   text-align: center;
   margin-bottom: 50px;
+  font-size: 1.8em;
 }
 #viewer h2 {
-  border-bottom: 1px solid #ffb400;
-  margin-top: 50px;
+  border-bottom: 1px solid #66b8a0;
+  margin: 45px 0 15px 0;
+  font-size: 1.4em;
 }
 #viewer h3 {
-  margin-top: 20px;
-  border-bottom: 1px solid #66b8a0;
+  margin: 20px 0 10px 0;
+  border-bottom: 1px solid #ffb400;
+  font-size: 1.25em;
 }
 #viewer h4 {
-  margin-top: 20px;
+  font-size: 1.1em;
+  margin: 12px 0 5px 0;
   border-bottom: 1px solid darkred;
 }
 #viewer .content_section {
-  font-size: 13pt;
+  font-size: 12pt;
   margin-left: 40px;
   margin-bottom: 30px;
 }
 #viewer .content_sub_section {
-  font-size: 13pt;
+  font-size: 12pt;
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -56,26 +68,17 @@ h6 {
   text-align: left;
   margin-bottom: 4px;
 }
-h2 {
-  margin-bottom: 30px;
-}
-h3 {
-  margin-bottom: 20px;
+#chooser {
+  margin-top: 20px;
 }
 #search {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 #search input {
   padding: 5px;
   font-size: 14pt;
   line-height: 1;
   width: 100%;
-}
-#viewer {
-  text-align: left;
-}
-#viewer code {
-  font-size: 14pt;
 }
 #search_results > ul {
   list-style: none;
@@ -90,22 +93,24 @@ h3 {
   padding: 0;
 }
 #materials > ul > li {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 #materials ul {
   list-style: none;
-  padding-left: 12px;
+  padding-left: 5px;
 }
 #materials hr {
   margin: 5px 0 16px 0;
 }
 #materials h2 {
-  border-bottom: 1px solid #ffb400;
-  margin-top: 50px;
+  font-size: 16pt;
+  margin: 24px 0;
+  border-bottom: 1px solid #66b8a0;
 }
 #materials h3 {
-  margin-top: 20px;
-  border-bottom: 1px solid #66b8a0;
+  margin: 12px 0;
+  font-size: 14pt;
+  border-bottom: 1px solid #ffb400;
 }
 #materials h4,
 #materials h5,
@@ -115,10 +120,11 @@ h3 {
 .e_res {
   background-color: #fafafa;
   padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 .e_res:hover {
   background-color: #f0f0f0;
+  cursor: pointer;
 }
 .e_name {
   margin: 0;
