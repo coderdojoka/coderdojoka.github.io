@@ -29,7 +29,40 @@ var CodoKaMaterial = {
             CodoKaMaterial.materialIndex = data;
 
             CodoKaMaterial._gen_categories(CodoKaMaterial.materialIndex.categories, CodoKaMaterial.$materials.find(">ul").empty(), 2);
+
+            var val = CodoKaMaterial.parseQueryString("mat");
+            var entry = CodoKaMaterial.findUUID(val);
+            if (entry)
+                CodoKaMaterial.showViewer(entry);
+
         });
+    },
+
+    findUUID: function (uuid) {
+
+        function handleCats(cats) {
+            for (var i = 0; i < cats.length; i++) {
+                var c = cats[i];
+                if (c.hasOwnProperty("categories")) {
+                    var res = handleCats(c.categories);
+                    if (res)
+                        return res;
+                } else {
+
+                    for (var j = 0; j < c.entries.length; j++) {
+                        var e = c.entries[j];
+                        if (e.hasOwnProperty("uuid") && e.uuid === uuid) {
+                            return e;
+                        }
+                    }
+
+                }
+            }
+
+            return null;
+        }
+
+        return handleCats(CodoKaMaterial.materialIndex.categories);
     },
 
     parseQueryString: function (val) {
@@ -39,6 +72,32 @@ var CodoKaMaterial = {
             if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
         });
         return result;
+    },
+
+    insertParam: function (key, value) {
+        key = encodeURI(key);
+        value = encodeURI(value);
+
+        var kvp = document.location.search.substr(1).split('&');
+
+        var i = kvp.length;
+        var x;
+        while (i--) {
+            x = kvp[i].split('=');
+
+            if (x[0] == key) {
+                x[1] = value;
+                kvp[i] = x.join('=');
+                break;
+            }
+        }
+
+        if (i < 0) {
+            kvp[kvp.length] = [key, value].join('=');
+        }
+
+        //this will reload the page, it's likely better to store this until finished
+        document.location.search = kvp.join('&');
     },
 
     showMaterials: function () {
@@ -146,5 +205,6 @@ var CodoKaMaterial = {
 
 $(function () {
     CodoKaMaterial.init();
+
 });
 

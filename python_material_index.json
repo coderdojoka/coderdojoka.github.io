@@ -17,6 +17,7 @@
       "entries": [
         {
           "type": "html",
+          "uuid": "ref_grundlagen",
           "uri": "Befehlsreferenz/1_grundlagen.html",
           "name": "Grundlagen: Kommentare, Variablen und Ausgabe",
           "desc": "Hier wird erklärt, was Kommentare sind, man Variablen erstellt und diese ausgeben kann.",
@@ -128,6 +129,89 @@
             "print",
             "if"
           ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/halbierter_tannenbaum/halbierter_tannenbaum.html",
+          "name": "Halbierter Tannenbaum",
+          "desc": "Erzeuge eine Tannenbaum-Ausgabe auf der Konsole.",
+          "tags": [
+            "print",
+            "for"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/ausgabe_und_variablen/ausgabe_und_variablen.html",
+          "name": "Ausgabe und Variablen",
+          "desc": "Einige kleine Aufgaben, um dein Wissen zu testen.",
+          "tags": [
+            "input",
+            "if",
+            "while"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/321/321.html",
+          "name": "321 - Countdown",
+          "desc": "Eine kleine Aufgabe.",
+          "tags": [
+            "input",
+            "while"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/fluss_ueberfahrt/fluss_ueberfahrt.html",
+          "name": "Flussüberfahrt - Wolf, Ziege, Kohl",
+          "desc": "Eine komplizierte Aufgabe, die tatktisches Geschick erfordert",
+          "tags": [
+            "input",
+            "if",
+            "while"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/maler/maler.html",
+          "name": "Maler",
+          "desc": "Maler",
+          "tags": [
+            "input",
+            "for"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/kopfrechnen/kopfrechnen.html",
+          "name": "Kopfrechnen",
+          "desc": "Eine Aufgabe, um dinen Rechenfähigkeiten zu testen.",
+          "tags": [
+            "input",
+            "if",
+            "while"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/zauberstab/zauberstab.html",
+          "name": "Zauberstab auswählen",
+          "desc": "Zauberstab",
+          "tags": [
+            "input",
+            "if",
+            "while"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "CodeBytes/sekunden_rechner/sekunden_rechner.html",
+          "name": "Sekundenrechner",
+          "desc": "Rechne eine Zeitangabe in Sekunden um.",
+          "tags": [
+            "input"
+          ]
         }
       ]
     },
@@ -172,9 +256,18 @@
         },
         {
           "type": "html",
-          "uri": "Fortschritte/Tutorials/Listen/Listen.html",
-          "name": "Listen",
-          "desc": "Listen",
+          "uri": "Fortschritte/Tutorials/Listen/listen.html",
+          "name": "Listen - Teil 1",
+          "desc": "Einfacher Umgang mit Listen.",
+          "tags": [
+            "list"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "Fortschritte/Tutorials/Listen/listen2.html",
+          "name": "Listen - Teil 2",
+          "desc": "Weitere nützliche Funktionen und Tricks im Umgang mit Listen.",
           "tags": [
             "list"
           ]
@@ -187,18 +280,45 @@
         {
           "name": "Eingabe",
           "entries": [
+
             {
               "type": "code",
               "uri": "Beispiele/eingabe.py",
               "desc": "Lass den Benutzer seinen Namen und Alter eingeben.",
               "name": "Eingaben lesen mit input(..)",
               "tags": [
-                "list"
+                "input"
               ],
               "level": "l1"
+            },
+            {
+              "type": "code",
+              "uri": "Beispiele/stopuhr.py",
+              "uuid": "a_stopuhr",
+              "desc": "Stoppe die Zeit, indem du die Zeit zwischen zweimal Enter drücken misst.",
+              "name": "Stopuhr",
+              "tags": [
+                "input",
+                "while"
+              ],
+              "level": "l2"
+            },
+            {
+              "type": "code",
+              "uri": "Beispiele/lerner_1x1.py",
+              "uuid": "a_1x1_lerner",
+              "desc": "Trainiere deine Rechenfähigkeiten mit dem 1x1-Lerner!",
+              "name": "1x1 Lerner",
+              "tags": [
+                "input",
+                "while"
+              ],
+              "level": "l2"
             }
           ]
         },
+
+
         {
           "name": "Dateien",
           "entries": [
