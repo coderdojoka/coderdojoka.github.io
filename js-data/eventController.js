@@ -15,39 +15,6 @@ app.controller('eventController', function($scope) {
         }**/
         {
             'year' : 2016,
-            'month' : 6,
-            'day' : 3,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : true
-        },
-        {
-            'year' : 2016,
-            'month' : 6,
-            'day' : 17,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : false
-        },
-        {
-            'year' : 2016,
-            'month' : 7,
-            'day' : 1,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Ausnahme: Seminarraum 301!',
-            'isIntroEvent' : true
-        },
-        {
-            'year' : 2016,
             'month' : 7,
             'day' : 15,
             'startHour' : 17,
@@ -67,7 +34,31 @@ app.controller('eventController', function($scope) {
             'endMin' : 0,
             'location' : 'Seminarraum 236',
             'isIntroEvent' : false
+        },
+        
+         {
+            'year' : 2016,
+            'month' : 8,
+            'day' : 26,
+            'startHour' : 17,
+            'startMin' : 0,
+            'endHour' : 19,
+            'endMin' : 0,
+            'location' : 'Seminarraum 236',
+            'isIntroEvent' : true
+        },
+        {
+            'year' : 2016,
+            'month' : 9,
+            'day' : 16,
+            'startHour' : 17,
+            'startMin' : 0,
+            'endHour' : 19,
+            'endMin' : 0,
+            'location' : 'Seminarraum 236',
+            'isIntroEvent' : false
         }
+        
     ];
 
     $scope.pastEventList = []; // filled in init

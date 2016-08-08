@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Informationen zum CoderDojo Karlsruhe">
+    <meta name="author" content="CoderDojo Karlsruhe">
+    <meta name="keywords"
+          content="CoderDojo,Karlsruhe,Programmieren,Schüler,Schueler,Kinder,Jugendliche,Schule,KIT,Informatik,Scratch,HTML,CSS,JavaScript,Java,PHP,C#,C,C++,Python">
+
+    <title>CoderDojo Karlsruhe</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lightbox Image Viewer CSS -->
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/coderdojoka.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-61795572-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img src="img/logo.png" alt="CoderDojo Karlsruhe Logo"
+                     class="navbar-brand-logo"/> <span id="navbar-brand-name"><span
+                    class="light">CoderDojo</span> Karlsruhe</span>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                
+                <li class="visible-xs">
+                    <a href="#about">Informationen</a>
+                </li>
+                
+                <li class="visible-xs">
+                    <a href="#join">Teilnehmen</a>
+                </li>
+                
+                <li class="visible-xs">
+                    <a href="#faq">Fragen</a>
+                </li>
+                
+                <li class="visible-xs">
+					<a href="neues.html">Neues</a>
+                </li>
+                
+                
+                
+                
+                
+                 <li class="dropdown hidden-xs">
+                    <a class="dropdown-toggle" href="#about">Informationen</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#join">Teilnehmen</a>
+                        </li>
+                        <li>
+                            <a href="#faq">Fragen</a>
+                        </li>
+                        <li>
+                            <a href="neues.html">Neues</a>
+                        </li>
+                    </ul>
+                </li>
+
+                
+
+                
+
+                <li>
+                    <a class="page-scroll" href="#events">Termine</a>
+                </li>
+               
+                <li>
+                    <a class="" href="mentoren.html">Mentoren</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="/material.html">Material</a>
+                </li>
+                <li class="dropdown hidden-xs">
+                    <a class="dropdown-toggle" href="/material.html">Material</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="material.html#scratch">Scratch</a>
+                        </li>
+                        <li>
+                            <a href="material.html#python">Python</a>
+                        </li>
+                        <li>
+                            <a href="material.html#html">HTML</a>
+                        </li>
+                        <li>
+                            <a href="material.html#java">Java</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+
+
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+
+
+        <div>
+            <table id="news_container">
+                <tr>
+                    <td>
+                        <div class="triangle_box">
+                            <div class="triangle_text">Nächstes Treffen</div>
+                            <div class="triangle_right"></div>
+                        </div>
+                    </td>
+                    <td><a href="#events" style="font-size: 1.2em">17. Juni</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="triangle_box">
+                            <div class="triangle_text">Jetzt Neu</div>
+                            <div class="triangle_right"></div>
+                        </div>
+                    </td>
+                    <td><a href="mentoren.html" style="font-size: 1.2em">Infos zu unseren Mentoren</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="triangle_box">
+                            <div class="triangle_text">Jetzt Neu</div>
+                            <div class="triangle_right"></div>
+                        </div>
+                    </td>
+                    <td><a href="neues.html" style="font-size: 1.2em">Die Neuigkeitenseite</a></td>
+                </tr>
+                <!--
+                <tr>
+                    <td>
+                        <div class="triangle_box">
+                            <div class="triangle_text">Neu</div>
+                            <div class="triangle_right"></div>
+                        </div>
+                    </td>
+                    <td><a href="raetsel.html">Rätsel der Woche</a></td>
+                </tr>
+                -->
+            </table>
+
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="brand-heading">CoderDojo</h1>
+
+                <h2 class="brand-heading">Karlsruhe</h2>
+
+                <p class="intro-text">Herzlich willkommen auf der Webseite des CoderDojo Karlsruhe!
+                    Hier findet ihr aktuelle Informationen zu unseren Treffen.</p>
+                <a href="#about" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<!-- About Section -->
+<section id="about" class="content-section text-center">
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Was ist ein CoderDojo?</h2>
+
+                <p>CoderDojo ist eine weltweit verbreitete gemeinnützige Organisation, deren Ziel es ist, Kindern und
+                    Jugendlichen Computer, Technik und vor allem das Programmieren näherzubringen. Die internationale
+                    Webseite findet ihr <a href="https://coderdojo.com/">hier</a>.</p>
+
+
+                <h2>Warum CoderDojo?</h2>
+
+
+                <p>Programmieren zu können ist eine Fähigkeit, die heutzutage immer wichtiger wird. Wie bei vielen
+                    Fähigkeiten gilt auch hier: je früher mit dem Erlernen begonnen wird, desto besser. Leider ist das
+                    Programmieren noch kein fester Bestandteil im Schulalltag der Kinder. Dadurch entstand unsere
+                    Vision, ein CoderDojo in Karlsruhe einzurichten, um interessierten Kindern die Möglichkeit zu
+                    bieten,
+                    programmieren zu lernen und sie in diesem Bereich zu fördern. </p>
+                <a href="img/codo/bild_1.jpg" data-lightbox="codo-bilder"
+                   data-title="Mit zweiter Tastatur gehts besser!">
+                    <img class="img-thumbnail img-responsive rechts_400" src="img/codo/bild_1.jpg" alt=""/>
+                </a>
+
+                <h2>Wie funktioniert's?</h2>
+
+                <p>Unsere Treffen finden alle zwei Wochen statt. Die teilnehmenden Kinder und Jugendlichen werden
+                    hierbei von Studenten und Mentoren aus technischen Bereichen betreut, während sie programmieren und
+                    unter kompetenter Anleitung ihre Fähigkeiten entwickeln und ausbauen. Alle in diesem Projekt
+                    mitwirkenden Mentoren engagieren sich ehrenamtlich und so sind die Treffen für alle Kinder
+                    kostenlos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Join Section -->
+<section id="join" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Wie mache ich mit?</h2>
+
+
+                <a href="img/codo/bild_2.jpg" data-lightbox="codo-bilder" data-title="Spaß mit Scratch">
+                    <img class="img-thumbnail" src="img/codo/bild_2.jpg" alt=""/>
+                </a>
+
+                <p>
+                    Die verfügbaren Plätze in jedem Dojo sind begrenzt und für regelmäßige Teilnehmer gilt, wer sich zu
+                    erst anmeldet, bekommt einen Platz. Neuanmeldungen können zur Zeit nur begrenzt angenommen werden
+                    und sollten deshalb mindestens eine Woche vor dem CoderDojo bei uns eingehen.
+
+                </p>
+
+
+                <p>Jeder, der teilnehmen will, muss sich vorher bei uns per Mail unter
+                    <a href="mailto:coderdojo.karlsruhe@gmail.com">coderdojo.karlsruhe@gmail.com</a> anmelden.
+
+                    <br>
+                    Bei der Erstanmeldung sollten in der Anmeldung folgende Dinge stehen:
+                </p>
+                <ul style="text-align: left">
+                    <li>Wie alt bist du?</li>
+                    <li>Was für Vorkentnisse bringst du mit?</li>
+                    <li>Bringst du einen eigenen Laptop mit?</li>
+                    <li>Was für Vorkentnisse bringst du mit?</li>
+                    <li>Was würdest du gerne im CoderDojo lernen?</li>
+                </ul>
+
+
+                <p>Vor allem jüngere Kinder (bis ca. 12 Jahre) müssen von ihren Eltern zu diesen Treffen begleitet
+                    werden.
+                    Eltern älterer Kinder können aber auch gerne bleiben und das Dojo aktiv mitgestalten.</p>
+
+                <p>Die Teilnehmer sollten einen eigenen Laptop mitbringen. Ist dies nicht möglich, kann in
+                    Ausnahmefällen
+                    eine Lösung gefunden werden, sofern wir schon in der Anmeldungsmail Bescheid bekommen.</p>
+
+                <p>Außerdem müssen bei der ersten Teilnahme die <a
+                        href="Teilnahmebedingungen.pdf">Teilnahmebedingungen</a>
+                    ausgedruckt, ausgefüllt und unterschrieben mitgebracht werden.</p>
+
+
+                <p>
+                    Ab der zweiten Teilnahme musst du dich über das CoderDojo-Zen Portal für die einzelnen Treffen
+                    anmelden. Eine Anleitung zur Verwendung von Zen ist <a
+                        href="https://github.com/coderdojoka/Materialien/raw/master/Zen_Anmeldung/zen_anmeldung.pdf">hier</a>
+                    zufinden.
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Events Section -->
+<section id="events" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Termine</h2>
+
+                <p>Das nächste Treffen findet am Freitag, dem 17.06.2016 von 17.00 Uhr bis 19:00 Uhr im
+                    Seminarraum 236 der Fakultät für Informatik im Gebäude 50.34 am KIT statt.</p>
+
+                <p>Die unten aufgelisteten Termine finden alle im Gebäude 50.34 des KIT statt. Es gehört zur Fakultät
+                    für
+                    Informatik, die uns den Seminarraum für unsere Treffen zur Verfügung stellt.</p>
+
+                <div id="timeline">
+
+                    <div class="row timeline-movement">
+                        <a class="page-scroll" href="#join">
+                            <div class="timeline-badge">
+                                <span class="timeline-balloon-date-day">20</span>
+                                <span class="timeline-balloon-date-month">MAI</span>
+                            </div>
+                        </a>
+
+                        <div class="col-sm-6 timeline-item timeline-item-first">
+                            <span class="question">Wo?</span>
+                            <a href="#map" class="page-scroll">Seminarraum 236</a>
+
+
+                        </div>
+
+                        <div class="col-sm-6 timeline-item timeline-item-last">
+                            <span class="question">Wann?</span>17:00 - 19:00
+                        </div>
+                    </div>
+
+                    <div class="row timeline-movement">
+                        <a class="page-scroll" href="#join">
+                            <div class="timeline-badge">
+                                <span class="timeline-balloon-date-day">03</span>
+                                <span class="timeline-balloon-date-month">JUNI</span>
+
+                            </div>
+                        </a>
+
+                        <div class="col-sm-6 timeline-item timeline-item-first">
+                            <span class="question">Wo?</span>
+                            <a href="#map" class="page-scroll">Seminarraum 236</a>
+                            <br>
+                            <a href="#join" class="join_data">Einstiegstermin</a>
+                        </div>
+                        <div class="col-sm-6 timeline-item timeline-item-last">
+                            <span class="question">Wann?</span>17:00 - 19:00
+                        </div>
+                    </div>
+
+                    <div class="row timeline-movement">
+                        <div class="timeline-badge timeline-filter-movement">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </div>
+                    </div>
+
+                    <div class="row timeline-movement">
+                        <a class="page-scroll" href="#join">
+                            <div class="timeline-badge">
+                                <span class="timeline-balloon-date-day">17</span>
+                                <span class="timeline-balloon-date-month">JUNI</span>
+                            </div>
+                        </a>
+
+                        <div class="col-sm-6 timeline-item timeline-item-first">
+                            <span class="question">Wo?</span>
+                            <a href="#map" class="page-scroll">Seminarraum 236</a>
+
+                        </div>
+                        <div class="col-sm-6 timeline-item timeline-item-last"><span class="question">Wann?</span>17:00
+                            - 19:00
+                        </div>
+                    </div>
+
+
+                    <div class="row timeline-movement">
+                        <a class="page-scroll" href="#join">
+                            <div class="timeline-badge">
+                                <span class="timeline-balloon-date-day">01</span>
+                                <span class="timeline-balloon-date-month">JULI</span>
+                            </div>
+                        </a>
+
+                        <div class="col-sm-6 timeline-item timeline-item-first">
+                            <span class="question">Wo?</span>
+                            <a href="#map" class="page-scroll">Ausnahme: Seminarraum 301!</a>
+                            <br>
+                            <a href="#join" class="join_data">Einstiegstermin</a>
+
+                        </div>
+                        <div class="col-sm-6 timeline-item timeline-item-last">
+                            <span class="question">Wann?</span>17:00 - 19:00
+
+                        </div>
+                    </div>
+
+                    <div class="row timeline-row-future">
+                        <div class="timeline-badge timeline-future-movement">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a href="img/codo/bild_3.jpg" data-lightbox="codo-bilder" data-title="Konzentriert am Arbeiten :)">
+                    <img class="img-thumbnail" src="img/codo/bild_3.jpg" alt=""/>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Ist CoderDojo das Richtige für mein Kind?</h2>
+
+                <p>Am einfachsten lässt sich das herausfinden, indem Sie das mit Ihrem Kind einfach mal ausprobieren!
+                    Wir
+                    erheben keine Teilnehmergebühr und wenn Ihr Kind Spaß bei uns hat,
+                    dann freuen wir uns, es wieder bei uns zu begrüßen!</p>
+
+                <h2>Für welche Altersgruppe ist CoderDojo geeignet?</h2>
+
+                <p>Wir bieten das CoderDojo für Kinder und Jugendliche von 10 bis 18 Jahren an. Falls Ihr Kind jünger
+                    als 13
+                    Jahre ist, müssen Sie es allerdings zu CoderDojo begleiten.</p>
+
+                <h2>Kann mein Kind jederzeit dazu kommen, oder muss ich bis zum nächsten Durchgang warten?</h2>
+
+                <p>Der Einstieg ist nur einmal im Monat möglich. Die entsprechenden Dojo sind in den aufgeführten
+                    Terminen markiert.
+                </p>
+
+                <h2>Muss mein Kind schon programmieren können?</h2>
+
+                <p>Nein. Gerade das soll Ihr Kind ja bei uns lernen! Wir wollen ein Umfeld bieten, in dem
+                    interessierte Kinder und Jugendliche gemeinsam etwas ausprobieren. Wir, die Mentoren, helfen weiter,
+                    wenn es zu knifflig wird. Falls Ihr Kind schon programmieren kann, begleiten wir gerne die Schritte
+                    zu
+                    komplexeren Projekten.</p>
+
+                <h2>Was muss mein Kind sonst können?</h2>
+
+                <p>Ihr Kind sollte den grundlegenden Umgang mit Computern beherschen. Es sollte z.B. selbständig neue
+                    Dateien und Ordner erstellen und eine Suchanfrage im Internet durchführen können.</p>
+
+                <h2>Was muss mein Kind mitbringen?</h2>
+
+                <p>Es wäre super, wenn Ihr Kind einen Laptop mitbringen könnte. Wenn das nicht möglich ist, sagen Sie
+                    uns
+                    bitte bei der Anmeldung unbedingt Bescheid – wir versuchen dann ein Laptop zur Verfügung zu
+                    stellen.</p>
+
+                <h2>Was für eine Art Laptop braucht mein Kind?</h2>
+
+                <p> Das Laptop muss nicht neu oder besonders schnell sein. Smartphones, Android-Tablets oder iPads sind
+                    allerdings nicht
+                    zum
+                    Programmieren geeignet.</p>
+
+                <h2>Ich kenne mich mit Computern nicht aus. Kann ich trotzdem helfen?</h2>
+
+                <p>Sehr gerne! Es gibt viele Dinge an einem Dojo, die nichts mit Computern zu tun haben. Je mehr Eltern
+                    mitmachen, desto mehr Zeit haben die Mentoren zu helfen.</p>
+
+                <h2>Was wird unterrichtet? Gibt es einen Plan?</h2>
+
+                <p>Wir haben einige spannende Projekte, die wir vorschlagen können. Allerdings richten wir uns ganz
+                    nach
+                    den Kindern, sind offen für ihre Vorschläge und möchten wissen, was sie schon immer mal am Computer
+                    selbst ausprobieren wollten. Unsere Mentoren haben ganz unterschiedliche Schwerpunkte und so
+                    können wir viele verschiedene Projekte begleiten.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Kontakt</h2>
+
+                <p>
+                    CoderDojo Karlsruhe<br>
+                    c/o AStA KIT<br>
+                    Adenauerring 7<br>
+                    76131 Karlsruhe<br>
+                </p>
+
+                <p>
+                    Bei Fragen und Anregungen wenden Sie sich einfach per Mail an:
+                    <a href="mailto:coderdojo.karlsruhe@gmail.com">coderdojo.karlsruhe@gmail.com</a></p>
+
+                <br>
+
+                <h2>Wo finden die Treffen statt?</h2>
+
+                <p>Karlsruher Institut für Technologie (KIT)<br>
+                    Fakultät für Informatik<br>
+                    Gebäude 50.34<br>
+                    Am Fasanengarten 5<br>
+                    76131 Karlsruhe</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<div id="map">
+</div>
+
+<!-- Sponsor Section & Cooperators -->
+<section id="sponsor" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <h2>Unterstützer</h2>
+
+            <div class="col-lg-4 col-lg-offset-2">
+                <a href="http://www.kit.edu/"><img src="img/kit.png" alt="KIT"
+                                                   style="height: 120px; padding-top: 30px;"></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="https://www.inovex.de/"><img src="img/inovex.png" alt="Inovex" style="height: 150px;"></a>
+            </div>
+
+            <br/>
+
+            <h2>Kooperationspartner</h2>
+            <div class="col-lg-4 col-lg-offset-4">
+                <a href="http://www.it-for-kids.org/"><img src="img/IT4KidsLogo2.png" alt="IT4Kids"
+                                                           style="height: auto; max-height: 110px; max-width: 100%"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; CoderDojo Karlsruhe 2015</p>
+
+        <p><a class="twitter-follow-button" href="https://twitter.com/CoderDojoKa" data-show-count="false">Follow
+            @CoderDojoKa</a></p>
+
+        <div class="fb-like" data-href="https://facebook.com/pages/CoderDojo-Karlsruhe/1455190411441732"
+             data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+        <p><span style="font-size:16px;"><a
+                href="https://www.sharelatex.com/github/repos/coderdojoka/satzung-hochschulgruppe/builds/latest/output.pdf">Satzung</a> (<a
+                href="https://github.com/coderdojoka/satzung-hochschulgruppe">Github</a>)</span></p>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Image Viewer Plugin -->
+<script src="js/lightbox.min.js"></script>
+
+<!-- Google Maps API -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANKFqb2CrR93rUb6kfU6XnqepBGJoFk0M"></script>
+
+<script>window.twttr = (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function (f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));</script>
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/coderdojoka.js"></script>
+
+
+<!-- Maps -->
+<script>
+
+    // Google Maps Scripts
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 15,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(49.0138084, 8.419531), // SR131 KIT
+
+            // Disables the default Google Maps UI components
+            disableDefaultUI: true,
+            scrollwheel: false,
+            draggable: false
+        };
+
+        // Get the HTML DOM element that will contain your map
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
+
+        // Create the Google Map using out element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+        var image = 'img/map-marker.png';
+        var myLatLng = new google.maps.LatLng(49.0138084, 8.419531);
+        var beachMarker = new google.maps.Marker({
+            position: myLatLng,
+            map: map
+        });
+    }
+
+</script>
+
+<!-- Init Lightbox -->
+<script>
+    lightbox.option({
+        'resizeDuration': 400,
+        'wrapAround': true,
+        'fitImagesInViewport': true
+    });
+
+</script>
+
+
+</body>
+
+</html>
