@@ -2,15 +2,16 @@ app.controller('eventController', function($scope) {
 
     $scope.eventList = [ // MANUALLY EDITED RAW DATA
         /** This is an example entry:
+         *  (Time values must be integers.)
         {
-            'year' : '',
-            'month' : '',
-            'day' : '',
-            'startHour' : '',
-            'startMin' : '',
-            'endHour' : '',
-            'endMin' : '',
-            'location' : '',
+            'year' : 2000,
+            'month' : 1,
+            'day' : 1,
+            'startHour' : 17,
+            'startMin' : 0,
+            'endHour' : 19,
+            'endMin' : 0,
+            'location' : 'Raum',
             'isIntroEvent' : false
         }**/
         {
@@ -35,7 +36,7 @@ app.controller('eventController', function($scope) {
             'location' : 'Seminarraum 236',
             'isIntroEvent' : false
         },
-        
+
          {
             'year' : 2016,
             'month' : 8,
@@ -58,7 +59,7 @@ app.controller('eventController', function($scope) {
             'location' : 'Seminarraum 236',
             'isIntroEvent' : false
         }
-        
+
     ];
 
     $scope.pastEventList = []; // filled in init
