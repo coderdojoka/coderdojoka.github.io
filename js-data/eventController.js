@@ -13,18 +13,7 @@ app.controller('eventController', function($scope) {
             'endMin' : 0,
             'location' : 'Raum',
             'isIntroEvent' : false
-        }**/
-        {
-            'year' : 2016,
-            'month' : 7,
-            'day' : 15,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : false
-        },
+        }**/        
         {
             'year' : 2016,
             'month' : 7,
@@ -46,7 +35,7 @@ app.controller('eventController', function($scope) {
             'endHour' : 19,
             'endMin' : 0,
             'location' : 'Seminarraum 236',
-            'isIntroEvent' : true
+            'isIntroEvent' : false
         },
         {
             'year' : 2016,
@@ -57,7 +46,29 @@ app.controller('eventController', function($scope) {
             'endHour' : 19,
             'endMin' : 0,
             'location' : 'Seminarraum 236',
+            'isIntroEvent' : true
+        },
+        {
+            'year' : 2016,
+            'month' : 9,
+            'day' : 30,
+            'startHour' : 17,
+            'startMin' : 0,
+            'endHour' : 19,
+            'endMin' : 0,
+            'location' : 'Seminarraum 236',
             'isIntroEvent' : false
+        },
+        {
+            'year' : 2016,
+            'month' : 10,
+            'day' : 14,
+            'startHour' : 17,
+            'startMin' : 0,
+            'endHour' : 19,
+            'endMin' : 0,
+            'location' : 'Seminarraum 236',
+            'isIntroEvent' : true
         }
 
     ];

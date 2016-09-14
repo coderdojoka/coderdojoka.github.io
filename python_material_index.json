@@ -271,6 +271,24 @@
           "tags": [
             "list"
           ]
+        },
+        {
+          "type": "html",
+          "uri": "Fortschritte/Tutorials/oop/klassen_i.html",
+          "name": "Klassen - Teil 1",
+          "desc": "Was sind Klassen, wie verwendet man sie.",
+          "tags": [
+            "class"
+          ]
+        },
+        {
+          "type": "html",
+          "uri": "Fortschritte/Tutorials/oop/klassen_ii.html",
+          "name": "Klassen - Teil 2",
+          "desc": "Vererbung, was ist das?. Statische Variablen",
+          "tags": [
+            "class"
+          ]
         }
       ]
     },
