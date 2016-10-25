@@ -1,22 +1,6 @@
 app.controller('eventController', function($scope) {
 
-    /*
-    Expected structure for "eventList" entries:
-    (Time values must be integers.)
-    {
-        "year" : 2000,
-        "month" : 1,
-        "day" : 1,
-        "startHour" : 17,
-        "startMin" : 0,
-        "endHour" : 19,
-        "endMin" : 0,
-        "location" : "Raum",
-        "isIntroEvent" : false
-    }
-    */
-
-    $scope.eventList = null; // initialized in init
+    $scope.eventList = eventList; // from global var in data script
     $scope.pastEventList = []; // filled in init
     $scope.nextEvent = null; // initialized in init
     $scope.futureEventList = []; // filled in init
@@ -56,9 +40,7 @@ app.controller('eventController', function($scope) {
         }
     };
 
-    $scope.init = function(argEventList) {
-
-        $scope.eventList = argEventList;
+    $scope.init = function() {
 
         // fill split event lists
 
@@ -92,8 +74,6 @@ app.controller('eventController', function($scope) {
 
     };
 
-    $.getJSON("js-data/events.json", function (data) {
-            $scope.init(data.eventList);
-        });
+    $scope.init();
 
 });
