@@ -1,89 +1,22 @@
 app.controller('eventController', function($scope) {
 
-    $scope.eventList = [ // MANUALLY EDITED RAW DATA
-        /** This is an example entry:
-         *  (Time values must be integers.)
-        {
-            'year' : 2000,
-            'month' : 1,
-            'day' : 1,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Raum',
-            'isIntroEvent' : false
-        }**/        
-        
-        {
-            'year' : 2016,
-            'month' : 9,
-            'day' : 16,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : true
-        },
-        {
-            'year' : 2016,
-            'month' : 9,
-            'day' : 30,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : false
-        },
-        {
-            'year' : 2016,
-            'month' : 10,
-            'day' : 14,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : false
-        },
-        {
-            'year' : 2016,
-            'month' : 10,
-            'day' : 28,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : true
-        },
-        {
-            'year' : 2016,
-            'month' : 11,
-            'day' : 11,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : false
-        },
-        {
-            'year' : 2016,
-            'month' : 11,
-            'day' : 25,
-            'startHour' : 17,
-            'startMin' : 0,
-            'endHour' : 19,
-            'endMin' : 0,
-            'location' : 'Seminarraum 236',
-            'isIntroEvent' : true
-        }
+    /*
+    Expected structure for "eventList" entries:
+    (Time values must be integers.)
+    {
+        "year" : 2000,
+        "month" : 1,
+        "day" : 1,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Raum",
+        "isIntroEvent" : false
+    }
+    */
 
-    ];
-
+    $scope.eventList = null; // initialized in init
     $scope.pastEventList = []; // filled in init
     $scope.nextEvent = null; // initialized in init
     $scope.futureEventList = []; // filled in init
@@ -123,7 +56,9 @@ app.controller('eventController', function($scope) {
         }
     };
 
-    $scope.init = function() {
+    $scope.init = function(argEventList) {
+
+        $scope.eventList = argEventList;
 
         // fill split event lists
 
@@ -157,6 +92,8 @@ app.controller('eventController', function($scope) {
 
     };
 
-    $scope.init();
+    $.getJSON("js-data/events.json", function (data) {
+            $scope.init(data.eventList);
+        });
 
 });
