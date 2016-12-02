@@ -1,3 +1,5 @@
+/* The 'eventController' in AngularJS depends on this data file. */
+
 eventList = [
     /*
     Expected structure for "eventList" entries:
@@ -79,6 +81,17 @@ eventList = [
         "endMin" : 0,
         "location" : "Seminarraum 236",
         "isIntroEvent" : true
+    },
+    {
+        "year" : 2016,
+        "month" : 12,
+        "day" : 9,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Seminarraum 236",
+        "isIntroEvent" : false
     }
 
 ];
