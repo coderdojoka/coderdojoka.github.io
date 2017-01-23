@@ -61,7 +61,7 @@ eventList = [
         "endMin" : 0,
         "location" : "Seminarraum 236",
         "isIntroEvent" : true
-,
+    },
     {
         "year" : 2017,
         "month" : 2,
