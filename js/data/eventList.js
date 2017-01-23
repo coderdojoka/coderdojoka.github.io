@@ -17,17 +17,7 @@ eventList = [
     }
     */
    
-    {
-        "year" : 2016,
-        "month" : 11,
-        "day" : 25,
-        "startHour" : 17,
-        "startMin" : 0,
-        "endHour" : 19,
-        "endMin" : 0,
-        "location" : "Seminarraum 236",
-        "isIntroEvent" : true
-    },
+   
     {
         "year" : 2016,
         "month" : 12,
@@ -54,6 +44,28 @@ eventList = [
         "year" : 2017,
         "month" : 1,
         "day" : 27,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Seminarraum 236",
+        "isIntroEvent" : false
+    },
+    {
+        "year" : 2017,
+        "month" : 2,
+        "day" : 10,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Seminarraum 236",
+        "isIntroEvent" : true
+,
+    {
+        "year" : 2017,
+        "month" : 2,
+        "day" : 24,
         "startHour" : 17,
         "startMin" : 0,
         "endHour" : 19,
