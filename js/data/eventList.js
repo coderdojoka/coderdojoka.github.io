@@ -38,7 +38,7 @@ eventList = [
         "endHour" : 19,
         "endMin" : 0,
         "location" : "Seminarraum 236",
-        "isIntroEvent" : true
+        "isIntroEvent" : false
     },
     {
         "year" : 2017,
@@ -60,7 +60,7 @@ eventList = [
         "endHour" : 19,
         "endMin" : 0,
         "location" : "Seminarraum 236",
-        "isIntroEvent" : true
+        "isIntroEvent" : false
     },
     {
         "year" : 2017,
