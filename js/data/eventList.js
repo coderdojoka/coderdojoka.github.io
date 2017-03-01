@@ -16,41 +16,6 @@ eventList = [
         "isIntroEvent" : false
     }
     */
-   
-   
-    {
-        "year" : 2016,
-        "month" : 12,
-        "day" : 9,
-        "startHour" : 17,
-        "startMin" : 0,
-        "endHour" : 19,
-        "endMin" : 0,
-        "location" : "Seminarraum 236",
-        "isIntroEvent" : false
-    },
-    {
-        "year" : 2017,
-        "month" : 1,
-        "day" : 13,
-        "startHour" : 17,
-        "startMin" : 0,
-        "endHour" : 19,
-        "endMin" : 0,
-        "location" : "Seminarraum 236",
-        "isIntroEvent" : false
-    },
-    {
-        "year" : 2017,
-        "month" : 1,
-        "day" : 27,
-        "startHour" : 17,
-        "startMin" : 0,
-        "endHour" : 19,
-        "endMin" : 0,
-        "location" : "Seminarraum 236",
-        "isIntroEvent" : false
-    },
     {
         "year" : 2017,
         "month" : 2,
@@ -71,6 +36,28 @@ eventList = [
         "endHour" : 19,
         "endMin" : 0,
         "location" : "Seminarraum 236",
+        "isIntroEvent" : false
+    },
+    {
+        "year" : 2017,
+        "month" : 3,
+        "day" : 10,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Seminarraum -118",
+        "isIntroEvent" : false
+    },
+    {
+        "year" : 2017,
+        "month" : 3,
+        "day" : 24,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Seminarraum -118",
         "isIntroEvent" : false
     }
 
