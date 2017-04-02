@@ -187,7 +187,10 @@
                         </div>
                     </td>
                     <td data-ng-controller="eventController" >
-                        <a href="#events" style="font-size: 1.2em">{{nextEvent.displayDay}}. {{nextEvent.displayMonthTextShort}}</a>
+                        <a href="#events" style="font-size: 1.2em">
+                            <span data-ng-if="areThereFutureEvents == true" >{{nextEvent.displayDay}}. {{nextEvent.displayMonthTextShort}}</span>
+                            <span data-ng-if="areThereFutureEvents == false" >Noch festzulegen.</span>
+                        </a>
                     </td>
                 </tr>
                 <tr>
@@ -288,15 +291,15 @@
 
                 </p>
 
-                <h2 style="color: red; font-weight: bold;">Aktuell können wir leider keine neuen Teilnehmer aufnehmen!</h2> 
-  
-		
+                <h2 style="color: red; font-weight: bold;">Aktuell können wir leider keine neuen Teilnehmer aufnehmen!</h2>
+
+
                 <p>Wer sich auf die Warteliste setzten lassen möchte, schreibt bitte eine Mail an
-                    <a href="mailto:coderdojo.karlsruhe@gmail.com">coderdojo.karlsruhe@gmail.com</a>. Dann können wir eine Abschätzung zum 						nächstmöglichen Einstiegstermin geben.
-				</p>
+                    <a href="mailto:coderdojo.karlsruhe@gmail.com">coderdojo.karlsruhe@gmail.com</a>. Dann können wir eine Abschätzung zum                      nächstmöglichen Einstiegstermin geben.
+                </p>
                 <p>
                     In der Mail sollten folgende Dinge stehen:
-               
+
                 <ul style="text-align: left">
                     <li>Wie alt bist du?</li>
                     <li>Was für Vorkentnisse bringst du mit?</li>
@@ -304,7 +307,7 @@
                     <li>Was würdest du gerne im CoderDojo lernen?</li>
                 </ul>
 
-				</p>
+                </p>
 
                 <p>Vor allem jüngere Kinder (bis ca. 12 Jahre) müssen von ihren Eltern zu diesen Treffen begleitet
                     werden.
@@ -340,14 +343,14 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Termine</h2>
 
-                <p>Das nächste Treffen findet am Freitag, dem
+                <p data-ng-if="areThereFutureEvents == true" >Das nächste Treffen findet am Freitag, dem
                 {{nextEvent.displayDay}}.{{nextEvent.displayMonth}}.{{nextEvent.displayYear}}
                 von {{nextEvent.displayStartTime}} Uhr bis {{nextEvent.displayEndTime}} Uhr
                 im {{nextEvent.location}} der Fakultät für Informatik im Gebäude 50.34 am KIT statt.</p>
 
-                <p>Die unten aufgelisteten Termine finden alle im Gebäude 50.34 des KIT statt. Es gehört zur Fakultät
-                    für
-                    Informatik, die uns den Seminarraum für unsere Treffen zur Verfügung stellt.</p>
+                <p data-ng-if="areThereFutureEvents == false" >Das Datum des nächsten Treffens wurde noch nicht festgelegt.</p>
+
+                <p>Die unten aufgelisteten Termine finden alle im Gebäude 50.34 des KIT statt. Es gehört zur Fakultät für Informatik, die uns den Seminarraum für unsere Treffen zur Verfügung stellt.</p>
 
                 <div id="timeline">
 
@@ -371,14 +374,14 @@
                     </div>
 
                     <!-- Clock Sign -->
-                    <div class="row timeline-movement">
+                    <div data-ng-if="areThereFutureEvents == true" class="row timeline-movement">
                         <div class="timeline-badge timeline-filter-movement">
                             <span class="glyphicon glyphicon-time"></span>
                         </div>
                     </div>
 
                     <!-- Next Dojo Event -->
-                    <div class="row timeline-movement">
+                    <div data-ng-if="areThereFutureEvents == true" class="row timeline-movement">
                         <a class="page-scroll" href="#join">
                             <div class="timeline-badge">
                                 <span class="timeline-balloon-date-day">{{nextEvent.displayDay}}</span>

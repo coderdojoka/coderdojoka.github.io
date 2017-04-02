@@ -68,6 +68,10 @@ app.controller('eventController', function($scope) {
             }
         }
 
+        // determine whether there are any future events to be listed
+
+        $scope.areThereFutureEvents = ($scope.futureEventList.length != 0);
+
         // separate next event
 
         $scope.nextEvent = $scope.futureEventList.shift();
