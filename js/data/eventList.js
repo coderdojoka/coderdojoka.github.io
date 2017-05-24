@@ -16,17 +16,7 @@ eventList = [
         "isIntroEvent" : false
     }
     */       
-    {
-        "year" : 2017,
-        "month" : 4,
-        "day" : 7,
-        "startHour" : 17,
-        "startMin" : 0,
-        "endHour" : 19,
-        "endMin" : 0,
-        "location" : "Seminarraum -118",
-        "isIntroEvent" : false
-    },
+   
     {
         "year" : 2017,
         "month" : 4,
@@ -42,6 +32,28 @@ eventList = [
         "year" : 2017,
         "month" : 5,
         "day" : 12,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Seminarraum -118",
+        "isIntroEvent" : false
+    },
+    {
+        "year" : 2017,
+        "month" : 5,
+        "day" : 26,
+        "startHour" : 17,
+        "startMin" : 0,
+        "endHour" : 19,
+        "endMin" : 0,
+        "location" : "Auf der GPN am ZKM/HfG ",
+        "isIntroEvent" : false
+    },
+    {
+        "year" : 2017,
+        "month" : 6,
+        "day" : 09,
         "startHour" : 17,
         "startMin" : 0,
         "endHour" : 19,
