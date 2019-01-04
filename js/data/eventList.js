@@ -16,17 +16,7 @@ eventList = [
       "isIntroEvent" : false
   }
   */
-    {
-    "year": 2018,
-    "month": 11,
-    "day": 16,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "isIntroEvent": false
-  },
+   
   {
     "year": 2018,
     "month": 11,
@@ -42,6 +32,41 @@ eventList = [
     "year": 2018,
     "month": 12,
     "day": 14,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "isIntroEvent": false
+  },
+  
+   {
+    "year": 2019,
+    "month": 1,
+    "day": 11,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "isIntroEvent": false
+  },
+  
+  {
+    "year": 2019,
+    "month": 1,
+    "day": 25,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "isIntroEvent": false
+  },
+  {
+    "year": 2019,
+    "month": 2,
+    "day": 8,
     "startHour": 17,
     "startMin": 0,
     "endHour": 19,
