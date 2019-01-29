@@ -29,11 +29,14 @@
           type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <!-- AngularJS base and data scripts -->
     <!-- If jQuery is used, load (include) AngularJS BEFORE jQuery! -->
+
+    <!-- Data scripts - load (include) BEFORE AngularJS -->
+    <script src="js/data/eventList.js"></script>
+
+    <!-- AngularJS scripts -->
     <script src="js/angular/angular-1-7-6-min.js"></script>
     <script src="js/angular/webApp.js"></script>
-    <script src="js/data/eventList.js"></script>
     <script src="js/angular/eventController.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +46,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  
 </head>
 
 <body data-ng-app="webApp" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
