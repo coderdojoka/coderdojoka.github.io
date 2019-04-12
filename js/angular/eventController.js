@@ -1,4 +1,17 @@
-app.controller('eventController', function($scope) {
+app.controller('eventController', function($scope, EventService) {
+
+    $scope.eventListZen = EventService.search({
+        query : {
+            dojoId : "55a9b83e-9188-45f5-8a6a-72f0af31aad2",
+            status : "published",
+            filterPastEvents : false,
+            limit$ : 10,
+            skip$ : 0,
+            sort$ : {
+                createdAt : -1
+            }
+        }
+    });
 
     $scope.eventList = eventList; // from global var in data script
     $scope.pastEventList = []; // filled in init
