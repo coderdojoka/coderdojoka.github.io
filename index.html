@@ -346,13 +346,15 @@
                             </div>
                         </a>
                         <div class="col-sm-6 timeline-item timeline-item-first">
-                            <span class="question">Wo?</span>
-                            <a href="#map" class="page-scroll">{{x.location}}</a>
-                            <br data-ng-if="x.isIntroEvent" />
-                            <a data-ng-if="x.isIntroEvent" href="#join" class="join_data">Einstiegstermin</a>
+                            <span class="title">{{x.title}}</span>
+                            <br data-ng-if="x.hasExtraInfo" />
+                            <span>{{x.extraInfo}}</span>
                         </div>
                         <div class="col-sm-6 timeline-item timeline-item-last">
                             <span class="question">Wann?</span>{{x.displayStartTime}} - {{x.displayEndTime}}
+                            <br>
+                            <span class="question">Wo?</span>
+                            <a href="#map" class="page-scroll">{{x.location}}</a>
                         </div>
                     </div>
 
@@ -372,13 +374,15 @@
                             </div>
                         </a>
                         <div class="col-sm-6 timeline-item timeline-item-first">
-                            <span class="question">Wo?</span>
-                            <a href="#map" class="page-scroll">{{nextEvent.location}}</a>
-                            <br data-ng-if="nextEvent.isIntroEvent" />
-                            <a data-ng-if="nextEvent.isIntroEvent" href="#join" class="join_data">Einstiegstermin</a>
+                            <span class="title">{{nextEvent.title}}</span>
+                            <br data-ng-if="nextEvent.hasExtraInfo" />
+                            <span>{{nextEvent.extraInfo}}</span>
                         </div>
                         <div class="col-sm-6 timeline-item timeline-item-last">
                             <span class="question">Wann?</span>{{nextEvent.displayStartTime}} - {{nextEvent.displayEndTime}}
+                            <br>
+                            <span class="question">Wo?</span>
+                            <a href="#map" class="page-scroll">{{nextEvent.location}}</a>
                         </div>
                     </div>
 
@@ -391,13 +395,15 @@
                             </div>
                         </a>
                         <div class="col-sm-6 timeline-item timeline-item-first">
-                            <span class="question">Wo?</span>
-                            <a href="#map" class="page-scroll">{{x.location}}</a>
-                            <br data-ng-if="x.isIntroEvent" />
-                            <a data-ng-if="x.isIntroEvent" href="#join" class="join_data">Einstiegstermin</a>
+                            <span class="title">{{x.title}}</span>
+                            <br data-ng-if="x.hasExtraInfo" />
+                            <span>{{x.extraInfo}}</span>
                         </div>
                         <div class="col-sm-6 timeline-item timeline-item-last">
                             <span class="question">Wann?</span>{{x.displayStartTime}} - {{x.displayEndTime}}
+                            <br>
+                            <span class="question">Wo?</span>
+                            <a href="#map" class="page-scroll">{{x.location}}</a>
                         </div>
                     </div>
 

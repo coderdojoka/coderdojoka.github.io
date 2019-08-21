@@ -23,26 +23,15 @@ eventList = [
   {
     "year": 2019,
     "month": 07,
-    "day": 12,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "isIntroEvent": false
-  },
-
-
-  {
-    "year": 2019,
-    "month": 07,
     "day": 26,
     "startHour": 17,
     "startMin": 0,
     "endHour": 19,
     "endMin": 0,
     "location": "Seminarraum -118",
-    "isIntroEvent": false
+    "hasExtraInfo": true,
+    "extraInfo": "für alle Teilnehmer",
+    "title": "Reguläres Dojo"
   },
 
 
@@ -55,9 +44,10 @@ eventList = [
     "endHour": 19,
     "endMin": 0,
     "location": "Seminarraum -118",
-    "isIntroEvent": false
+    "hasExtraInfo": true,
+    "extraInfo": "für alle Teilnehmer",
+    "title": "Reguläres Dojo"
   },
-
 
   {
     "year": 2019,
@@ -68,8 +58,26 @@ eventList = [
     "endHour": 19,
     "endMin": 0,
     "location": "Seminarraum -118",
-    "isIntroEvent": false
+    "hasExtraInfo": true,
+    "extraInfo": "für alle Teilnehmer",
+    "title": "Reguläres Dojo"
+  },
+
+  {
+    "year": 2019,
+    "month": 10,
+    "day": 04,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "hasExtraInfo": true,
+    "extraInfo": "für fortgeschrittene Teilnehmer",
+    "title": "Projekt-Dojo"
   }
+
+
 
 
 ];

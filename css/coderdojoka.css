@@ -553,9 +553,10 @@ body {
 }
 
 #timeline .timeline-movement .timeline-item {
-    padding: 20px 0;
+    padding: 20px 0 20px 75px;
     top: 14px;
     font-size: 1.2em;
+    text-align: left;
 }
 
 #timeline .timeline-movement .timeline-item .timeline-panel {
@@ -598,7 +599,16 @@ body {
 }
 
 #timeline .question {
+    text-transform: uppercase;
+    letter-spacing: .05em;
     padding-right: 10px;
+    color: #42dca3;
+    font-weight: bold;
+}
+
+#timeline .title {
+    text-transform: uppercase;
+    letter-spacing: .05em;
     color: #42dca3;
     font-weight: bold;
 }
