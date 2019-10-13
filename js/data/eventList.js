@@ -22,35 +22,6 @@ eventList = [
 
   {
     "year": 2019,
-    "month": 07,
-    "day": 26,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "hasExtraInfo": true,
-    "extraInfo": "für alle Teilnehmer",
-    "title": "Reguläres Dojo"
-  },
-
-
-  {
-    "year": 2019,
-    "month": 09,
-    "day": 13,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "hasExtraInfo": true,
-    "extraInfo": "für alle Teilnehmer",
-    "title": "Reguläres Dojo"
-  },
-
-  {
-    "year": 2019,
     "month": 09,
     "day": 27,
     "startHour": 17,
@@ -75,9 +46,52 @@ eventList = [
     "hasExtraInfo": true,
     "extraInfo": "für fortgeschrittene Teilnehmer",
     "title": "Projekt-Dojo"
+  },
+
+
+  {
+    "year": 2019,
+    "month": 10,
+    "day": 18,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "hasExtraInfo": true,
+    "extraInfo": "für fortgeschrittene Teilnehmer",
+    "title": "Projekt-Dojo"
+  },
+
+
+  {
+    "year": 2019,
+    "month": 10,
+    "day": 25,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "hasExtraInfo": true,
+    "extraInfo": "für alle Teilnehmer",
+    "title": "Reguläres Dojo"
+  },
+
+
+  {
+    "year": 2019,
+    "month": 11,
+    "day": 8,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "hasExtraInfo": true,
+    "extraInfo": "für alle Teilnehmer",
+    "title": "Reguläres Dojo"
   }
-
-
 
 
 ];
