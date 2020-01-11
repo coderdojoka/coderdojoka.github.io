@@ -21,17 +21,12 @@
     <link href="css/lightbox.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="css/coderdojoka.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
-          type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- AngularJS base and data scripts -->
     <!-- If jQuery is used, load (include) AngularJS BEFORE jQuery! -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="js/angular/angular.min.js.js"></script>
     <script src="js/angular/webApp.js"></script>
     <script src="js/data/eventList.js"></script>
     <script src="js/angular/eventController.js"></script>
@@ -590,54 +585,9 @@
 <!-- Image Viewer Plugin -->
 <script src="js/lightbox.min.js"></script>
 
-<!-- Google Maps API -->
-<script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANKFqb2CrR93rUb6kfU6XnqepBGJoFk0M"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="js/coderdojoka.js"></script>
-
-
-<!-- Maps -->
-<script>
-
-    // Google Maps Scripts
-    // When the window has finished loading create our google map below
-    google.maps.event.addDomListener(window, 'load', init);
-
-    function init() {
-        // Basic options for a simple Google Map
-        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-        var mapOptions = {
-            // How zoomed in you want the map to start at (always required)
-            zoom: 15,
-
-            // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(49.0138084, 8.419531), // SR131 KIT
-
-            // Disables the default Google Maps UI components
-            disableDefaultUI: true,
-            scrollwheel: false,
-            draggable: false
-        };
-
-        // Get the HTML DOM element that will contain your map
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
-
-        // Create the Google Map using out element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
-
-        // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-        var image = 'img/map-marker.png';
-        var myLatLng = new google.maps.LatLng(49.0138084, 8.419531);
-        var beachMarker = new google.maps.Marker({
-            position: myLatLng,
-            map: map
-        });
-    }
-
-</script>
 
 <!-- Init Lightbox -->
 <script>
