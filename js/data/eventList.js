@@ -18,59 +18,6 @@ eventList = [
   */
 
 
-
- {
-    "year": 2019,
-    "month": 12,
-    "day": 13,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "hasExtraInfo": true,
-    "extraInfo": "für fortgeschrittene Teilnehmer",
-    "title": "Projekt-Dojo"
-  },
- {
-    "year": 2019,
-    "month": 12,
-    "day": 20,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "hasExtraInfo": true,
-    "extraInfo": "für alle Teilnehmer",
-    "title": "Reguläres Dojo"
-  },
- {
-    "year": 2020,
-    "month": 1,
-    "day": 10,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "hasExtraInfo": true,
-    "extraInfo": "für alle Teilnehmer",
-    "title": "Reguläres Dojo"
-  },
- {
-    "year": 2020,
-    "month": 1,
-    "day": 17,
-    "startHour": 17,
-    "startMin": 0,
-    "endHour": 19,
-    "endMin": 0,
-    "location": "Seminarraum -118",
-    "hasExtraInfo": true,
-    "extraInfo": "für fortgeschrittene Teilnehmer",
-    "title": "Projekt-Dojo"
-  },
  {
     "year": 2020,
     "month": 1,
@@ -83,6 +30,45 @@ eventList = [
     "hasExtraInfo": true,
     "extraInfo": "für alle Teilnehmer",
     "title": "Reguläres Dojo"
-  }
+  },
+ {
+    "year": 2020,
+    "month": 2,
+    "day": 7,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "hasExtraInfo": true,
+    "extraInfo": "für alle Teilnehmer",
+    "title": "Reguläres Dojo"
+  },
 
+{
+    "year": 2020,
+    "month": 2,
+    "day": 14,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "hasExtraInfo": true,
+    "extraInfo": "für fortgeschrittene Teilnehmer",
+    "title": "Projekt-Dojo"
+  },
+ {
+    "year": 2020,
+    "month": 2,
+    "day": 21,
+    "startHour": 17,
+    "startMin": 0,
+    "endHour": 19,
+    "endMin": 0,
+    "location": "Seminarraum -118",
+    "hasExtraInfo": true,
+    "extraInfo": "für alle Teilnehmer",
+    "title": "Reguläres Dojo"
+  }
 ];
