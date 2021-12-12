@@ -17,7 +17,7 @@ eventList = [
   }
   */
 
-
+/*
  {
     "year": 2020,
     "month": 1,
@@ -71,4 +71,5 @@ eventList = [
     "extraInfo": "für alle Teilnehmer",
     "title": "Reguläres Dojo"
   }
+  */
 ];
